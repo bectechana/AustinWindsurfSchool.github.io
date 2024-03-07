@@ -1,0 +1,67 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  .booking-text {
+    font-family: 'Arial', sans-serif; /* Change the font family as desired */
+    font-size: 1.5em; /* Adjust the size as needed */
+    color: #ffffff; /* Change the color as needed */
+    margin-bottom: 5px; /* Removes the bottom margin to bring the next element closer */
+  }
+  .contact-info {
+    margin-top: 0; /* Reduces the top margin to bring elements closer together */
+    margin-bottom: 0;
+  }
+  .promo-text {
+    display: block; /* Makes the text go on its own line */
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adds space above the text */
+  }
+  .center-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-top: 20px; /* Adds space above the buttons */
+  }
+  .school-title {
+    font-size: 4em; /* Increases the size of the title */
+    color: white; /* Changes the color to white */
+    text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
+  }
+  .btn {
+    margin: 0 10px; /* Adds space between buttons */
+  }

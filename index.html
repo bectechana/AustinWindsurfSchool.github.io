@@ -8,47 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
-  </style>
+  <link rel="stylesheet" href="app.css">
 </head>
 <body>
 
@@ -61,13 +21,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">Home</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#">Spring Classes</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -75,14 +35,20 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+    <div class="center-buttons">
+        <a href="#springClassesContainer" class="btn btn-primary">Spring Beginner Group Classes!</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScy_jDVyzYcW7yE7S2axVCOlRQoDHElQEDEjYv7lpOXoRwJxQ/viewform" class="btn btn-info" target="_blank">Join Mailing List</a>
+    </div>
+    <p class="promo-text">30% off All Group Classes! (Expires March 7th) Sign up Today!</p>
+    <h1 class="school-title">Austin Windsurf School</h1>
+    <p class="booking-text">Book Your Lesson or Rental Now!</p>
+    <p class="contact-info">Call: 425-802-2808</p>
+    <p class="contact-info">Email: austinwindsurfschool@gmail.com</p>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
+<div  id="springClassesContainer" class="container-fluid bg-2 text-center">
+    <h2>Spring Beginner Group Classes</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSt1-wRWeraVG0t9iRr6CgzHKgL3M9i9YhQc5pgMbCLNzUcA/viewform" class="btn btn-default btn-lg" target="_blank">
     Book Here
@@ -90,7 +56,7 @@
   
 </div>
 
-<!-- Third Container (Grid) -->
+<!-- Third Container (Grid) 
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Where To Find Me?</h3><br>
   <div class="row">
@@ -108,10 +74,9 @@
     </div>
   </div>
 </div>
-
+-->
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
 
 </body>
