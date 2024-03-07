@@ -5,11 +5,11 @@ body {
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
-  .bg-1 { 
+  .bg-1 {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
   }
-  .bg-2 { 
+  .bg-2 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
     background-size: cover;
@@ -19,16 +19,16 @@ body {
     color: #ffffff; /* Dark text color for readability */
     font-size: .8em; /* Adjust text size as needed */
     margin: auto; /* Center the paragraph in the container */
-    max-width: 500px; /* Maximum width of the text box */
+    max-width: 400px; /* Maximum width of the text box */
   }
-  .bg-3 { 
+  .bg-3 {
     background-color: #ffffff; /* White */
     color: #555555;
   }
-  .bg-4 { 
+  .bg-4 {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
-}
+  }
   .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -52,39 +52,38 @@ body {
     margin-bottom: 5px; /* Removes the bottom margin to bring the next element closer */
   }
   .promo-text {
-      display: block; /* Makes the text go on its own line */
-      text-align: center; /* Centers the text */
-      margin-top: 20px; /* Adds space above the text */
-    }
-    .center-buttons {
-        display: flex;
-        justify-content: center; /* Centers the buttons horizontally */
-        margin-top: 10px; /* Adds space above the buttons */
-        margin-bottom: 20px;
-    }
-    .center-buttons a {
-        margin: 0 25px; /* Adds 15 pixels of space to the left and right of each button */
-    }
-    
-    .school-title {
-        font-size: 3em; /* Increases the size of the title */
-        color: white; /* Changes the color to white */
-        text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
-    }
-    .contact-info {
-      margin-top: 0; /* Reduces the top margin to bring elements closer together */
-      margin-bottom: 0;
-      line-height: 1.2; /* Adjusts the line height to bring lines closer together */
+    display: block; /* Makes the text go on its own line */
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adds space above the text */
+  }
+  .center-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-top: 10px; /* Adds space above the buttons */
+    margin-bottom: 20px;
+  }
+  .center-buttons a {
+    margin: 0 25px; /* Adds 15 pixels of space to the left and right of each button */
+  }
 
-    }
-.promo-section p {
+  .school-title {
+    font-size: 3em; /* Increases the size of the title */
+    color: white; /* Changes the color to white */
+    text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
+  }
+  .contact-info {
+    margin-top: 0; /* Reduces the top margin to bring elements closer together */
+    margin-bottom: 0;
+    line-height: 1.2; /* Adjusts the line height to bring lines closer together */
+  }
+ .promo-section p {
     margin: 0; /* Removes default paragraph margins */
     padding: 2px 0; /* Reduces padding to 2px on the top and bottom */
     line-height: 1.2; /* Adjusts the line height to bring lines closer together */
-}
-.btn {
+  }
+  .btn {
     margin: 0 10px; /* Adds space between buttons */
-}
+  }
   .fab {
     padding: 20px;
     font-size: 30px;
@@ -95,3 +94,66 @@ body {
     border-radius: 50%;
     color: #fff; /* Icon color */
   }
+  /* Style for the third container */
+#springClassesContainer {
+  font-family: 'Montserrat', sans-serif;
+  color: #333; /* Adjust the color to match the image */
+  background-color: #fff; /* Adjust the background color to match the image */
+  text-align: left;
+  padding: 20px; /* Adjust padding to match the image */
+}
+
+/* Style for the header in the third container */
+#springClassesContainer h2 {
+  font-size: 36px; /* Keep the header size larger */
+  margin-bottom: 20px; /* Adjust spacing to match the image */
+}
+
+/* Style for the text in the third container to decrease the size */
+#springClassesContainer p,
+#springClassesContainer li,
+#springClassesContainer h3 {
+  font-size: 14px; /* Decrease the size to match the image */
+}
+
+/* Style for the ordered list in the third container */
+#springClassesContainer ul {
+  list-style-type: decimal;
+  padding-left: 20px; /* Adjust padding for alignment */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for the dates and times list to align bullet points next to the text */
+#springClassesContainer .col-md-6 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Style for the list items to display bullet points next to the text */
+#springClassesContainer .col-md-6 ul li {
+  position: relative;
+  padding-left: 20px; /* Adjust padding to match the image */
+}
+
+#springClassesContainer .col-md-6 ul li:before {
+  content: '• ';
+  position: absolute;
+  left: 0;
+}
+
+/* Adjust the button size and style to match the image */
+#springClassesContainer .btn {
+  background-color: #007bff; /* Adjust the button color to match the image */
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjust padding to match the image */
+  font-size: 18px; /* Adjust font size for the button text */
+  margin-top: 20px; /* Adjust spacing to match the image */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add shadow to match the image */
+}
+
+/* Adjust the phone number text size */
+#springClassesContainer .contact-info {
+  font-size: 14px; /* Adjust the size to match the image */
+  margin-top: 20px; /* Adjust spacing to match the image */
+}
