@@ -1,0 +1,43 @@
+.faq {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .question {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .answer {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .answer::before {
+    content: "✔ ";
+    color: green;
+  }
+
+  .aws-container {
+    max-width: 600px; /* Limit the width to 600px */
+    margin: auto; /* Center the container */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+
+  .aws-container h1 {
+    font-size: 20px; /* Adjust the size as needed */
+    color: #333;
+    margin-bottom: 20px; /* Adjust spacing to match the image */
+  }
+
+  .additional-contact {
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Increase the font size if needed */
+    margin-top: 20px; /* Add space above the text */
+  }

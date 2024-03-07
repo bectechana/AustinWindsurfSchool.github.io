@@ -165,3 +165,39 @@ body {
   font-size: 14px; /* Adjust the size to match the image */
   margin-top: 20px; /* Adjust spacing to match the image */
 }
+.appraisal {
+  margin-bottom: 15px; /* Adjust the margin between each appraisal */
+  text-align: center;
+}
+
+.appraisal p {
+  font-family: Arial, sans-serif; /* Change font family for the appraisal text */
+  padding-left: -5px;
+}
+
+/* Custom CSS for Cancellation Policy Section */
+.cancellation-policy {
+  margin: 20px auto; /* Add margin around the cancellation policy section and center it horizontally */
+  padding: 15px; /* Add padding inside the cancellation policy section */
+  border-radius: 5px; /* Add rounded corners to the cancellation policy section */
+  max-width: 500px; /* Limit the maximum width of the cancellation policy section to 500px */
+}
+
+.cancellation-policy h2 {
+  font-size: 24px; /* Adjust the font size of the heading */
+  color: #333; /* Set the color of the heading text */
+}
+
+.cancellation-policy p {
+  font-size: 16px; /* Set the font size for paragraphs in the cancellation policy */
+  line-height: 1.5; /* Set the line height for better readability */
+}
+
+.cancellation-policy ul {
+  list-style-type: none; /* Remove default list style */
+  display: flex; /* Use flexbox for horizontal layout */
+}
+
+.cancellation-policy li {
+  margin-right: 20px; /* Add space between each list item */
+}

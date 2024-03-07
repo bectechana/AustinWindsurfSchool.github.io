@@ -1,0 +1,57 @@
+/* Contact Page Styles */
+
+.contact-container {
+    max-width: 700px; /* Limit the width to 700px */
+    margin: auto; /* Center the container */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-header h1 {
+    background-color: #ffd700; /* Yellow background */
+    display: inline-block;
+    padding: 5px 20px;
+    color: #000; /* Black text */
+}
+
+.contact-header p {
+    margin: 10px 0;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 5px 10px; /* Smaller padding for a smaller button */
+    border: none;
+    cursor: pointer;
+    width: auto; /* Auto width for a smaller button */
+    display: inline-block; /* Make the button inline */
+}
+
+.contact-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add styles for icons if needed */
+.fas.fa-map-marker-alt,
+.fas.fa-phone,
+.fas.fa-envelope {
+    color: #333; /* Icon color */
+    margin-right: 8px;
+}

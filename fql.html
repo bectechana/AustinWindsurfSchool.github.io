@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Austin Windsurf School</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <meta charset="UTF-8">
-  <title>Dynamic Content Loading</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-      $(document).ready(function() {
-          $('#loadContentBtn').click(function() {
-              $('#contentContainer').load('fql.html');
-          });
-      });
-  </script>
+    <title>Austin Windsurf School - FAQ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="fql.css">
+    <script defer src="activePage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -32,14 +24,37 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="/index.html">Home</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Spring Classes</a></li>
-        <li><a id="loadContentBtn" href="fql.html">FAQ</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/fql.html">FAQ</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- FAQ Section -->
+<h1 class="aws-container">Austin Windsurf School - FAQ</h1>
+
+<div class="faq">
+  <div class="question">Can I rent equipment without taking a lesson?</div>
+  <div class="answer">Yes! We offer gear rentals for experienced windsurfers who just want to hit the water on their own. Our rental rates are competitive and our equipment is top-quality. Contact us to make a reservation.</div>
+
+  <div class="question">Which lesson is right for me?</div>
+  <div class="answer">If you're a total beginner or haven't windsurfed in a long time, the Spring Beginner Classes are recommended. If you are an experienced windsurfer, private lessons are more suitable.</div>
+
+  <div class="question">Do you rent wetsuits?</div>
+  <div class="answer">Wetsuits can be rented from Dive World and Scubaland Adventures in Austin. We do not rent wetsuits.</div>
+
+  <div class="question">Do you offer lessons for events?</div>
+  <div class="answer">Yes, contact us to learn more about our event lesson options and rates.</div>
+
+  <p class="additional-contact">Contact us for more questions!</p>
+
+</div>
+
+</body>
+</html>
