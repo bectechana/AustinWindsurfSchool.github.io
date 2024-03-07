@@ -43,30 +43,32 @@ body {
     color: #ffffff; /* Change the color as needed */
     margin-bottom: 5px; /* Removes the bottom margin to bring the next element closer */
   }
-  .contact-info {
-    margin-top: 0; /* Reduces the top margin to bring elements closer together */
-    margin-bottom: 0;
-  }
   .promo-text {
-    display: block; /* Makes the text go on its own line */
-    text-align: center; /* Centers the text */
-    margin-top: 20px; /* Adds space above the text */
-  }
-  .center-buttons {
-    display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    margin-top: 10px; /* Adds space above the buttons */
-    margin-bottom: 20px;
-}
-.center-buttons a {
-    margin: 0 25px; /* Adds 15 pixels of space to the left and right of each button */
-}
+      display: block; /* Makes the text go on its own line */
+      text-align: center; /* Centers the text */
+      margin-top: 20px; /* Adds space above the text */
+    }
+    .center-buttons {
+        display: flex;
+        justify-content: center; /* Centers the buttons horizontally */
+        margin-top: 10px; /* Adds space above the buttons */
+        margin-bottom: 20px;
+    }
+    .center-buttons a {
+        margin: 0 25px; /* Adds 15 pixels of space to the left and right of each button */
+    }
+    
+    .school-title {
+        font-size: 4em; /* Increases the size of the title */
+        color: white; /* Changes the color to white */
+        text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
+    }
+    .contact-info {
+      margin-top: 0; /* Reduces the top margin to bring elements closer together */
+      margin-bottom: 0;
+      line-height: 1.2; /* Adjusts the line height to bring lines closer together */
 
-.school-title {
-  font-size: 4em; /* Increases the size of the title */
-  color: white; /* Changes the color to white */
-  text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
-}
+    }
 .promo-section p {
     margin: 0; /* Removes default paragraph margins */
     padding: 2px 0; /* Reduces padding to 2px on the top and bottom */
@@ -75,3 +77,18 @@ body {
 .btn {
     margin: 0 10px; /* Adds space between buttons */
 }
+
+.bg-4 {
+    background-color: #2f2f2f; /* Dark grey background for footer */
+    color: #fff; /* White text color */
+  }
+  .fab {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: #fff; /* Icon color */
+  }
