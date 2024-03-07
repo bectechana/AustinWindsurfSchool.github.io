@@ -67,7 +67,7 @@ body {
     }
     
     .school-title {
-        font-size: 4em; /* Increases the size of the title */
+        font-size: 3em; /* Increases the size of the title */
         color: white; /* Changes the color to white */
         text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
     }
@@ -85,7 +85,6 @@ body {
 .btn {
     margin: 0 10px; /* Adds space between buttons */
 }
-
   .fab {
     padding: 20px;
     font-size: 30px;
