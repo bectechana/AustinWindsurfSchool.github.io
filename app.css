@@ -96,6 +96,7 @@ body {
   }
   /* Style for the third container */
 #springClassesContainer {
+  max-width: 800px; /* Maximum width of the text box */
   font-family: 'Montserrat', sans-serif;
   color: #333; /* Adjust the color to match the image */
   background-color: #fff; /* Adjust the background color to match the image */
@@ -106,6 +107,7 @@ body {
 /* Style for the header in the third container */
 #springClassesContainer h2 {
   font-size: 36px; /* Keep the header size larger */
+  font-weight: 800; /* Increase font weight to make it bolder */
   margin-bottom: 20px; /* Adjust spacing to match the image */
 }
 
@@ -140,7 +142,13 @@ body {
   position: absolute;
   left: 0;
 }
+#springClassesContainer .col-md-6:first-child {
+  padding-right: 50px; /* Adjust the value as needed */
+}
 
+#springClassesContainer .col-md-6:last-child {
+  padding-left: 50px; /* Adjust the value as needed */
+}
 /* Adjust the button size and style to match the image */
 #springClassesContainer .btn {
   background-color: #007bff; /* Adjust the button color to match the image */
