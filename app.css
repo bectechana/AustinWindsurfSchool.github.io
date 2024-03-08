@@ -9,6 +9,20 @@ body {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
   }
+  .second-con {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+    border-radius: 15px; /* Add rounded corners */
+    padding: 5px 20px; /* Adjust padding top and bottom */
+    max-width: 400px; /* Maximum width of the box */
+    margin: 5px auto; /* Center the box on the page with reduced margin */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.second-con p {
+    font-size: .8em; /* Adjust text size as needed */
+    margin: 0; /* Remove default margin for the paragraph */
+}
   .bg-2 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
@@ -55,6 +69,7 @@ body {
     display: block; /* Makes the text go on its own line */
     text-align: center; /* Centers the text */
     margin-top: 20px; /* Adds space above the text */
+    text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
   }
   .center-buttons {
     display: flex;
@@ -75,25 +90,15 @@ body {
     margin-top: 0; /* Reduces the top margin to bring elements closer together */
     margin-bottom: 0;
     line-height: 1.2; /* Adjusts the line height to bring lines closer together */
+    text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
+
   }
  .promo-section p {
     margin: 0; /* Removes default paragraph margins */
     padding: 2px 0; /* Reduces padding to 2px on the top and bottom */
     line-height: 1.2; /* Adjusts the line height to bring lines closer together */
   }
-  .btn {
-    margin: 0 10px; /* Adds space between buttons */
-  }
-  .fab {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    color: #fff; /* Icon color */
-  }
+
   /* Style for the third container */
 #springClassesContainer {
   max-width: 800px; /* Maximum width of the text box */
