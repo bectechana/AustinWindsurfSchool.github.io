@@ -1,57 +1,39 @@
 /* Contact Page Styles */
 
-.contact-container {
-    max-width: 700px; /* Limit the width to 700px */
-    margin: auto; /* Center the container */
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    padding: 20px;
-    background-color: #f9f9f9;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.contact-header h1 {
-    background-color: #ffd700; /* Yellow background */
-    display: inline-block;
-    padding: 5px 20px;
-    color: #000; /* Black text */
+.contact-us {
+    font-family: 'Newton', fallback-fonts;
+    font-size: 22pt;
+    text-align: center;
+    padding-top: 75px;
+}
+#contact_form {
+    width: 500px;
+    margin: 0 auto;
 }
 
-.contact-header p {
-    margin: 10px 0;
+.mb-3 {
+    margin-bottom: 1rem;
 }
 
-.contact-form {
-    margin-top: 20px;
+.mb-3 label {
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: calc(100% - 20px); /* Full width minus padding */
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc; /* Light grey border */
-    box-sizing: border-box;
+.mb-3 input, .mb-3 textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
 }
 
-.contact-form button {
-    background-color: #4CAF50; /* Green background */
+.btn {
+    background-color: #007bff;
     color: white;
-    padding: 5px 10px; /* Smaller padding for a smaller button */
+    padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
-    width: auto; /* Auto width for a smaller button */
-    display: inline-block; /* Make the button inline */
-}
-
-.contact-form button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-/* Add styles for icons if needed */
-.fas.fa-map-marker-alt,
-.fas.fa-phone,
-.fas.fa-envelope {
-    color: #333; /* Icon color */
-    margin-right: 8px;
 }

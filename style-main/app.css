@@ -1,28 +1,123 @@
-body {
+  body, html {
     font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 {
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    z-index: 10;
   }
-  .second-con {
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-    border-radius: 15px; /* Add rounded corners */
-    padding: 5px 20px; /* Adjust padding top and bottom */
-    max-width: 400px; /* Maximum width of the box */
-    margin: 5px auto; /* Center the box on the page with reduced margin */
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.second-con p {
-    font-size: .8em; /* Adjust text size as needed */
-    margin: 0; /* Remove default margin for the paragraph */
-}
+
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+
+  /***** Beginning of First Container CSS ***********/
+  .first-container-fluid {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .first-container-fluid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/images/beginnerWindSurdHRHook.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(0.9) brightness(0.6);
+  }
+  .content {
+    position: relative;
+    color: white;
+  }
+  .school-title-header {
+    font-family: 'Newton', fallback-fonts;
+    font-size: 4em;
+    color: white;
+  }
+  .contact-info {
+    margin-top: 0; /* Reduces the top margin to bring elements closer together */
+    margin-bottom: 0;
+    line-height: 1.2; /* Adjusts the line height to bring lines closer together */
+  }
+  .center-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-top: 10px; /* Adds space above the buttons */
+    margin-bottom: 20px;
+  }
+  .center-buttons a {
+    margin: 0 25px; /* Adds 15 pixels of space to the left and right of each button */
+  }
+
+ /***** Beginning of Second Container CSS ****************/
+ .second-con-fluid{
+   padding-top: 70px;
+     padding-bottom: 70px;
+  }
+ .left-side {
+  background-image: url('/images/beginnerWindSurdHRHook.jpg');
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  }
+  .right-side {
+    background-color: white;
+    padding: 20px;
+  }
+
+ /****** Start of Gallery - Third Container CSS ******/
+  .our-gallery-con{
+  padding-top: 75px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  }
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+  /* Styling for images */
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  }
+
+
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   .bg-2 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
@@ -43,61 +138,13 @@ body {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
   }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
   .booking-text {
     font-family: 'Arial', sans-serif; /* Change the font family as desired */
     font-size: 1.5em; /* Adjust the size as needed */
     color: #ffffff; /* Change the color as needed */
     margin-bottom: 5px; /* Removes the bottom margin to bring the next element closer */
   }
-  .promo-text {
-    display: block; /* Makes the text go on its own line */
-    text-align: center; /* Centers the text */
-    margin-top: 20px; /* Adds space above the text */
-    text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
-  }
-  .center-buttons {
-    display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    margin-top: 10px; /* Adds space above the buttons */
-    margin-bottom: 20px;
-  }
-  .center-buttons a {
-    margin: 0 25px; /* Adds 15 pixels of space to the left and right of each button */
-  }
 
-  .school-title {
-    font-size: 3em; /* Increases the size of the title */
-    color: white; /* Changes the color to white */
-    text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
-  }
-  .contact-info {
-    margin-top: 0; /* Reduces the top margin to bring elements closer together */
-    margin-bottom: 0;
-    line-height: 1.2; /* Adjusts the line height to bring lines closer together */
-    text-shadow: 2px 2px 4px #000000; /* Adds a shadow for better readability */
-
-  }
- .promo-section p {
-    margin: 0; /* Removes default paragraph margins */
-    padding: 2px 0; /* Reduces padding to 2px on the top and bottom */
-    line-height: 1.2; /* Adjusts the line height to bring lines closer together */
-  }
 
   /* Style for the third container */
 #springClassesContainer {
@@ -207,19 +254,3 @@ body {
   margin-right: 20px; /* Add space between each list item */
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.grid-item {
-  width: 100%;
-  height: 100%;
-}
-
-.grid-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
