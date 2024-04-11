@@ -19,10 +19,21 @@
     z-index: 10;
   }
 
-  .navbar-nav  li a:hover {
+  .navbar-nav li a:hover {
     color: #1abc9c !important;
   }
 
+  .navbar-brand {
+    color: #1abc9c !important; /* Change this to the color you want */
+    font-size: 20px; /* Change this to the size you want */
+  }
+  @media (max-width: 992px) {
+    .navbar-brand {
+      position: absolute;
+      padding: 10px;
+      left: 0;
+    }
+  }
   /***** Beginning of First Container CSS ***********/
   .first-container-fluid {
     position: relative;
@@ -90,18 +101,25 @@
 
  /****** Start of Gallery - Third Container CSS ******/
   .our-gallery-con{
-  padding-top: 75px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-size: 1.5em;
+    padding-top: 75px;
+    text-align: center;
+    font-size: 1.5em;
   }
- .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-  padding-bottom: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+  .our-gallery-con-blurp{
+    font-family: 'Times', fallback-fonts;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #898686;
+    font-size: 1em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   /* Styling for images */
   .grid-item img {
@@ -113,110 +131,40 @@
   }
 
 
-  .container-fluid {
+/****** Lesson List - Forth Container CSS */
+  .accordion {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(182, 194, 216);
+  }
+  .accordion-title{
+    font-family: 'Times', fallback-fonts;
+    font-size: 25px;
+    padding: 25px;
+    text-align: center;
+  }
+  .accordion-header{
+    font-family: 'Newton', fallback-fonts;
+    font-size: 18px;
+  }
+  .sold-out {
+    color: white;
+    background-color: red;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    float: right;
+  }
+
+/***** */
+.container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 
-  .bg-2 {
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-    background-size: cover;
-    padding: 40px 0; /* Add padding to the top and bottom for spacing */
-  }
-  .bg-2 p {
-    color: #ffffff; /* Dark text color for readability */
-    font-size: .8em; /* Adjust text size as needed */
-    margin: auto; /* Center the paragraph in the container */
-    max-width: 400px; /* Maximum width of the text box */
-  }
-  .bg-3 {
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 {
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .booking-text {
-    font-family: 'Arial', sans-serif; /* Change the font family as desired */
-    font-size: 1.5em; /* Adjust the size as needed */
-    color: #ffffff; /* Change the color as needed */
-    margin-bottom: 5px; /* Removes the bottom margin to bring the next element closer */
-  }
 
-
-  /* Style for the third container */
-#springClassesContainer {
-  max-width: 800px; /* Maximum width of the text box */
-  font-family: 'Montserrat', sans-serif;
-  color: #333; /* Adjust the color to match the image */
-  background-color: #fff; /* Adjust the background color to match the image */
-  text-align: left;
-  padding: 20px; /* Adjust padding to match the image */
-}
-
-/* Style for the header in the third container */
-#springClassesContainer h2 {
-  font-size: 36px; /* Keep the header size larger */
-  font-weight: 800; /* Increase font weight to make it bolder */
-  margin-bottom: 20px; /* Adjust spacing to match the image */
-}
-
-/* Style for the text in the third container to decrease the size */
-#springClassesContainer p,
-#springClassesContainer li,
-#springClassesContainer h3 {
-  font-size: 14px; /* Decrease the size to match the image */
-}
-
-/* Style for the ordered list in the third container */
-#springClassesContainer ul {
-  list-style-type: decimal;
-  padding-left: 20px; /* Adjust padding for alignment */
-  margin: 0; /* Remove default margin */
-}
-
-/* Style for the dates and times list to align bullet points next to the text */
-#springClassesContainer .col-md-6 ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-/* Style for the list items to display bullet points next to the text */
-#springClassesContainer .col-md-6 ul li {
-  position: relative;
-  padding-left: 20px; /* Adjust padding to match the image */
-}
-
-#springClassesContainer .col-md-6 ul li:before {
-  content: '• ';
-  position: absolute;
-  left: 0;
-}
-#springClassesContainer .col-md-6:first-child {
-  padding-right: 50px; /* Adjust the value as needed */
-}
-
-#springClassesContainer .col-md-6:last-child {
-  padding-left: 50px; /* Adjust the value as needed */
-}
-/* Adjust the button size and style to match the image */
-#springClassesContainer .btn {
-  background-color: #007bff; /* Adjust the button color to match the image */
-  color: white;
-  border: none;
-  padding: 10px 20px; /* Adjust padding to match the image */
-  font-size: 18px; /* Adjust font size for the button text */
-  margin-top: 20px; /* Adjust spacing to match the image */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add shadow to match the image */
-}
-
-/* Adjust the phone number text size */
-#springClassesContainer .contact-info {
-  font-size: 14px; /* Adjust the size to match the image */
-  margin-top: 20px; /* Adjust spacing to match the image */
-}
 .appraisal {
   margin-bottom: 15px; /* Adjust the margin between each appraisal */
   text-align: center;
