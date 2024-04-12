@@ -292,7 +292,7 @@ h6 {
   cursor: pointer;
   display: none;
   line-height: 0;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
 @media (max-width: 991px) {
@@ -309,12 +309,12 @@ h6 {
   position: fixed;
   overflow: hidden;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  right: 0px;
+  left: 0px;
+  bottom: 650px;
   background: rgba(39, 37, 34, 0.9);
   transition: 0.3s;
-  z-index: 0;
+  z-index: 1000;
 }
 
 .navbar-mobile .mobile-nav-toggle {
