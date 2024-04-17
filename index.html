@@ -61,8 +61,8 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Lesson Dates</a></li>
           <li><a class="nav-link scrollto" href="#events">Rates</a></li>
+          <li><a class="nav-link scrollto" href="#gallery"> Gallery</a></li>
           <li><a class="nav-link scrollto" href="#chefs">Instructors</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -474,6 +474,9 @@
     <section id="testimonials" class="testimonials">
       <div class="container position-relative">
 
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
@@ -600,23 +603,21 @@
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-md-6 form-group">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
             </div>
           </div>
-          <div class="form-group mt-3">
+          <div class="form-group">
             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
           </div>
-          <div class="form-group mt-3">
+          <div class="form-group">
             <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
           </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
         </form>
+        
 
       </div>
     </section><!-- End Contact Section -->
