@@ -190,6 +190,13 @@ h6 {
   max-height: 40px;
 }
 
+/* Media query for small screens (e.g., mobile) */
+@media (max-width: 768px) {
+  /* Reduce font size of header */
+  #header .logo h1 {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+  }
+}
 /*--------------------------------------------------------------
 # Book a table button Menu
 --------------------------------------------------------------*/
