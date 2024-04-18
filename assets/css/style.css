@@ -32,7 +32,58 @@ h5,
 h6 {
   font-family: "Satisfy", sans-serif;
 }
+/* Topbar Styling */
 
+#topbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding inside the topbar */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width */
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.container-xl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-form form {
+  display: flex;
+  align-items: center;
+}
+
+.signup-form input {
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.signup-form button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  cursor: pointer;
+}
+
+/* Sticky Behavior */
+.fixed-bottom {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 999;
+  opacity: 0.8; /* Adjust opacity as desired */
+  transition: opacity 0.3s ease-in-out;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
