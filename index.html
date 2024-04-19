@@ -581,30 +581,30 @@
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-phone"></i>
-              <h4>Email:</h4>
+              <h4>Call:</h4>
               <p>1+ 425-208-2808</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-envelope"></i>
-              <h4>Call:</h4>
+              <h4>Email:</h4>
               <p>AustinWindsurfSchool<br>@gmail.com</p>
             </div>
           </div>
 
         </div>
 
-        <form action="" method="post" role="form" class="php-email-form">
+        <form action="" method="post" role="" class="contact-email-form" name="contact-form-mailing-list">
           <div class="row">
             <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="first-name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
             <div class="col-md-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
           </div>
           <div class="form-group">
             <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
@@ -616,7 +616,7 @@
           </div>
 
           <div class="text-center">
-            <button type="submit">Send Message</button>
+            <button type="submit" value="Submit" id="submit" >Send Message</button>
           </div>
         </form>
 
@@ -657,6 +657,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/mail/scripts.js"></script>
   <script src="assets/vendor/mail/mailing-list-google-sheet.js"></script>
+  <script src="assets/vendor/mail/contact-form-google-sheet.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
