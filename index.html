@@ -594,29 +594,28 @@
 
         </div>
 
-        <form action="" method="post" role="" class="contact-email-form" name="contact-form-mailing-list">
+        <form  class="contact-email-form" onsubmit="emailSend(); reset(); return false;">
           <div class="row">
             <div class="col-md-6 form-group">
-              <input type="text" name="first-name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
             </div>
             <div class="col-md-6 form-group">
-              <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="phone"  class="form-control" id="phone" placeholder="Phone Number" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+            <textarea class="form-control" rows="5" id="message" placeholder="Message" required></textarea>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading d-none">Loading...</div>
-            <div class="error-message d-none"></div>
-            <div class="sent-message d-none">Your message has been sent. Thank you!</div>
-          </div>
-
           <div class="text-center">
-            <button type="submit" value="Submit" id="submit" >Send Message</button>
+            <button type="submit" >Send Message</button>
           </div>
         </form>
 
@@ -655,10 +654,14 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/mail/scripts.js"></script>
   <script src="assets/vendor/mail/mailing-list-google-sheet.js"></script>
-  <script src="assets/vendor/mail/contact-form-google-sheet.js"></script>
-
+  <script src="assets/vendor/mail/contact-form-to-email.js"></script>
+  
+  <!-- External Sources -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
