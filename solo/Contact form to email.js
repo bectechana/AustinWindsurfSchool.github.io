@@ -1,17 +1,11 @@
 function emailSend() {
-    var form = document.querySelector('.contact-email-form');
-
     var userName = document.getElementById('name').value;
     var phone = document.getElementById('phone').value;
     var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
 
     var messageBody = "Name: " + userName +
         "<br/> Phone: " + phone +
         "<br/> Email: " + email +
-        "<br/> Subject: " + subject +
-        "<br/> Message: " + message;
 
     console.log("Sending email...");
     Email.send({
@@ -25,10 +19,7 @@ function emailSend() {
     }).then(
         message => {
             if (message == 'OK') {
-                swal("Successful", "Thank you for your message", "success")
-                .then((value) => {
-                    form.reset(); // This will reset the form after clicking 'OK' in the swal
-                });
+                swal("Successful", "Thank you for your message", "success");
             } else {
                 swal("Error", "Email sending failed: " + message, "error");
             }
@@ -37,8 +28,5 @@ function emailSend() {
         console.error("Failed to send email:", error);
         swal("Error", "System error: " + error.message, "error");
     });
-
-
-    return false;
 }
  
