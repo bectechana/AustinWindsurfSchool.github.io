@@ -564,12 +564,12 @@ h6 {
   font-size: 13px;
   display: inline-block;
   border-radius: 50px;
-  padding: 12px 15px;
+  padding: 12px 30px;
   transition: 0.5s;
   line-height: 1;
   margin: 5px 10px;
   animation-delay: 0.8s;
-  color: #fff;
+  color: rgb(173, 163, 163);
   border: 2px solid #ffb03b;
   background: transparent; /* Add this if you want the input field to be transparent */
 }
