@@ -1040,6 +1040,12 @@ section {
     background: #ffb03b;
   }
 }
+/*--------------------------------------------------------------
+# main-inner-form
+--------------------------------------------------------------*/
+#main-inner-form {
+  padding-top: 100px; /* Adjust this value based on the height of your navbar */
+}
 
 /*--------------------------------------------------------------
 # Events
@@ -1133,6 +1139,20 @@ section {
 
 .events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffb03b;
+}
+
+.swiper-pagination-bullet {
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background-color: #007bff;
 }
 
 /*--------------------------------------------------------------
