@@ -5,6 +5,48 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+document.addEventListener("DOMContentLoaded", function() {
+  const classData = [
+      {
+          title: "April 27/28",
+          price: "$100.00",
+          description: "Beginner morning 2 day classes. All dates and times sold out!",
+          filter: "filter-beginner"
+      },
+      {
+          title: "May 3",
+          price: "$100.00",
+          description: "Beginner single day class",
+          filter: "filter-beginner"
+      },
+      {
+        title: "May 5/3",
+        price: "$100.00",
+        description: "Beginner single day class",
+        filter: "filter-beginner"
+    },
+      // Add more classes as needed
+  ];
+
+  const classList = document.getElementById("class-list");
+
+  classData.forEach(cls => {
+      const item = document.createElement("div");
+      item.className = `col-lg-6 menu-item ${cls.filter}`;
+      item.innerHTML = `
+          <div class="menu-content">
+              <a href="#">${cls.title}</a><span>${cls.price}</span>
+          </div>
+          <div class="menu-ingredients">
+              <strong>${cls.description}</strong>
+          </div>
+      `;
+      classList.appendChild(item);
+  });
+});
+
+
 (function() {
   "use strict";
 
