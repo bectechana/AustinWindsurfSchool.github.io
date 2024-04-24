@@ -69,39 +69,102 @@
   <main id="main-inner-form">
  <!-- ======= Contact Section ======= -->
  <section id="contact" class="contact">
-  <div class="container">
-    <div class="section-title">
-      <h2>Lesson Location</h2>
-      <p>Location: Lake Pflugerville Park, occasionally Bob Wentz park, we are a mobile school</p>
-    </div>
+    <div class="container">
+      <div class="section-title">
+        <h2><span>Windsurf Group Class Signups</span></h2>
+        <p>If you're here to sign up for a windsurf group class, you're in the right place! Please answer the questions below and follow payment instructions.</p>
+      </div>
 
-    <form  class="contact-email-form" onsubmit="return emailSend();">
-      <div class="row">
-        <div class="col-md-6 form-group">
-          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+        
+      <form class="sign-up-form" onsubmit="">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+          </div>
         </div>
-        <div class="col-md-6 form-group">
-          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Ex: username@email.com" required>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 form-group">
-          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="Ex: 451-123-4567" required>
         </div>
-        <div class="col-md-6 form-group">
-          <input type="phone"  class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="emergencyContactName">Emergency Contact First and Last Name</label>
+            <input type="text" class="form-control" id="emergencyContactName" placeholder="Enter First and Last Name" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="emergencyContactPhone">Emergency Contact Phone Number</label>
+            <input type="tel" class="form-control" id="emergencyContactPhone" placeholder="Ex: 451-123-4567" required>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="" required>
+            <small id="emailHelp" class="form-text text-muted">If participant is under 11 years, please call 425-802-2808 before booking to confirm availability</small>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="weight">Weight in pounds (lbs)</label>
+            <input type="number" class="form-control" id="weight" placeholder="" required>
+            <small id="emailHelp" class="form-text text-muted">If participant is under 100 lbs, please call 425-802-2808 before booking to confirm availability</small>
+          </div>
+          <div class="form-group">
+            <label for="numPeople">How many people are signing up? (Max 6)</label>
+            <select class="form-control" id="numPeople" required onchange="updateGuestFields()">
+              <option value="">Select number of people</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div id="guestDetails"></div>
+        </div>
+        <div class="form-group">
+          <label for="swimConsent">Do you acknowledge that you (and the people you are signning up for) know how to <strong>swim, tread water,</strong> and are okay with having your <strong>head underwater</strong> briefly (3 seconds)?</label>
+          <input class="form-check-input" type="checkbox" id="swimConsent" required>
+          <label class="form-check-label" for="swimConsent">
+            <strong>I Achknoledge</strong>
+          </label>
+        </div>     
+        <div class="form-group">
+          <label for="swimTestConsent">If requested by the instructor, would you be okay taking a short swim test? (20 ft of swimming)</label>
+          <input class="form-check-input" type="checkbox" id="swimTestConsent" required>
+          <label class="form-check-label" for="swimTestConsent">
+            <strong>I Agree</strong>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="preferredDates">Preferred Dates:</label>
+          <select class="form-control" id="preferredDates" required>
+              <option value="" disabled selected>Select a date</option>
+              <option value="March 30/31">March 30/31</option>
+              <option value="April 13/14">April 13/14</option>
+              <option value="April 27/28">April 27/28</option>
+              <option value="May 4/5">May 4/5</option>
+              <option value="May 18/19">May 18/19</option>
+              <option value="May 11/12">May 11/12</option>
+              <option value="June 1/2">June 1/2</option>
+          </select>
       </div>
-      <div class="form-group">
-        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message" required></textarea>
-      </div>
-      <div class="text-center">
-        <button type="submit" >Send Message</button>
-      </div>
-    </form>
+      
+        <div class="text-center">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      
 
-
-  </div>
+    </div> 
 </section><!-- End Contact Section -->
 
   </main>
@@ -135,6 +198,13 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+<!-- Include Bootstrap and Tempusdominus CSS and JS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
 
 </body>
 

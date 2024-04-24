@@ -46,6 +46,45 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+function updateGuestFields() {
+  const numPeople = document.getElementById("numPeople").value;
+  const guestDetails = document.getElementById("guestDetails");
+
+  guestDetails.innerHTML = ''; // Clear existing additional guest input fields
+
+  for (let i = 1; i <= numPeople; i++) {
+    guestDetails.innerHTML += `
+    <div class="row">
+    <div class="col-md-6 form-group">
+        <label for="guestFirstName${i}"> <strong> Guest ${i} First Name</strong></label>
+        <input type="text" class="form-control" id="guestFirstName${i}" placeholder="Enter First Name" required>
+      </div>
+      <div class="col-md-6 form-group">
+      <label for="guestLastName${i}"><strong> Guest ${i} Last Name</strong></label>
+        <input type="text" class="form-control" id="guestLastName${i}" placeholder="Enter Last Name" required>
+      </div>
+      </div>
+      <div class="form-group">
+        <label for="guestEmail${i}">Guest ${i} Email</label>
+        <input type="email" class="form-control" id="guestEmail${i}" placeholder="Enter Email" required>
+      </div>
+      <div class="form-group">
+        <label for="guestPhoneNumber${i}">Guest ${i} Phone Number</label>
+        <input type="tel" class="form-control" id="guestPhoneNumber${i}" placeholder="Enter Phone Number" required>
+      </div>
+      <div class="row">
+      <div class="col-md-6 form-group">
+      <label for="guestEmail${i}">Guest ${i} Weight</label>
+      <input type="email" class="form-control" id="guestEmail${i}" placeholder="Enter Weight in lbs" required>
+    </div>
+    <div class="col-md-6 form-group">      
+    <label for="guestPhoneNumber${i}">Guest ${i} Age</label>
+      <input type="tel" class="form-control" id="guestPhoneNumber${i}" placeholder="Enter Age in years" required>
+    </div>
+    </div>
+    `;
+  }
+}
 
 (function() {
   "use strict";
