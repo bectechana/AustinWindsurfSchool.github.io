@@ -33,7 +33,7 @@
 
   <section class="inner-page">
   </section>
-  
+
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center fixed-top ">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
@@ -54,7 +54,6 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="lesson-form">Class Dates</a></li>
-          <li><a class="nav-link scrollto" href="#events">Rates</a></li>
           <li><a class="nav-link scrollto" href="#gallery"> Gallery</a></li>
           <li><a class="nav-link scrollto" href="#chefs">Instructors</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -68,6 +67,42 @@
   </header><!-- End Header -->
 
   <main id="main-inner-form">
+ <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Lesson Location</h2>
+      <p>Location: Lake Pflugerville Park, occasionally Bob Wentz park, we are a mobile school</p>
+    </div>
+
+    <form  class="contact-email-form" onsubmit="return emailSend();">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6 form-group">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="col-md-6 form-group">
+          <input type="phone"  class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" >Send Message</button>
+      </div>
+    </form>
+
+
+  </div>
+</section><!-- End Contact Section -->
 
   </main>
 
