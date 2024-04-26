@@ -8,24 +8,62 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   const classData = [
-      {
-          title: "April 27/28",
-          price: "$100.00",
-          description: "Beginner morning 2 day classes. All dates and times sold out!",
-          filter: "filter-beginner"
-      },
-      {
-          title: "May 3",
-          price: "$100.00",
-          description: "Beginner single day class",
-          filter: "filter-beginner"
-      },
-      {
-        title: "May 5/3",
+    {
+        title: "April 27/28 (SOLD OUT)",
         price: "$100.00",
-        description: "Beginner single day class",
+        description: "",
         filter: "filter-beginner"
     },
+    {
+        title: "May 5th 12:30-3:00 PM (SOLD OUT)",
+        price: "$100.00",
+        description: "Beginner single day class, all gear is provided.",
+        filter: "filter-beginner"
+    },
+    {
+      title: "May 11/12",
+      price: "$145.00",
+      description: "Beginner 2 day class, all gear is provided.",
+      filter: "filter-beginner"
+    },
+    {
+      title: "June 1/2 9:00 AM - 11:30 AM",
+      price: "$145.00",
+      description: "Beginner 2 day class, all gear is provided.",
+      filter: "filter-beginner"
+    },
+    {
+      title: "June 1/2 3:30 PM - 6:00 PM",
+      price: "$145.00",
+      description: "Level 1 - Beginner 2 day class, all gear is provided.",
+      filter: "filter-beginner"
+    },
+    {
+      title: "April 27/28 12:30 PM - 3:00 PM",
+      price: "$145.00",
+      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
+      filter: "filter-intermediate"
+    },
+    {
+      title: " May 11/12 12:30 PM - 3:00 PM",
+      price: "$145.00",
+      description: "Level 2 -Intermediate 2 day class, all gear is provided.",
+      filter: "filter-intermediate"
+    },
+    {
+      title: "June 1/2 12:30 PM - 3:00 PM",
+      price: "$145.00",
+      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
+      filter: "filter-intermediate"
+  },
+    {
+      title: "June 1/2 12:30 PM - 3:00 PM",
+      price: "$200.00",
+      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
+      filter: "filter-private"
+  },
+    
+
       // Add more classes as needed
   ];
 
@@ -36,15 +74,27 @@ document.addEventListener("DOMContentLoaded", function() {
       item.className = `col-lg-6 menu-item ${cls.filter}`;
       item.innerHTML = `
           <div class="menu-content">
-              <a href="#">${cls.title}</a><span>${cls.price}</span>
+              <a href="">${cls.title}</a><span>${cls.price}</span>
           </div>
           <div class="menu-ingredients">
-              <strong>${cls.description}</strong>
+              ${cls.description}
           </div>
       `;
       classList.appendChild(item);
   });
 });
+
+// video-lightbox.js
+$(document).ready(function(){
+    $('.venobox').venobox();
+});
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Target all elements with 'venobox' class and initialize Venobox
+//   document.querySelectorAll('.venobox').forEach(function(element) {
+//       new Venobox(element);
+//   });
+// });
 
 function updateGuestFields() {
   const numPeople = document.getElementById("numPeople").value;
@@ -57,29 +107,25 @@ function updateGuestFields() {
     <div class="row">
     <div class="col-md-6 form-group">
         <label for="guestFirstName${i}"> <strong> Guest ${i} First Name</strong></label>
-        <input type="text" class="form-control" id="guestFirstName${i}" placeholder="Enter First Name" required>
+        <input type="text" name="g${i}-first" class="form-control" id="guestFirstName${i}" placeholder="Enter First Name" required>
       </div>
       <div class="col-md-6 form-group">
       <label for="guestLastName${i}"><strong> Guest ${i} Last Name</strong></label>
-        <input type="text" class="form-control" id="guestLastName${i}" placeholder="Enter Last Name" required>
+        <input type="text" name="g${i}-last" class="form-control" id="guestLastName${i}" placeholder="Enter Last Name" required>
       </div>
       </div>
       <div class="form-group">
         <label for="guestEmail${i}">Guest ${i} Email</label>
-        <input type="email" class="form-control" id="guestEmail${i}" placeholder="Enter Email" required>
-      </div>
-      <div class="form-group">
-        <label for="guestPhoneNumber${i}">Guest ${i} Phone Number</label>
-        <input type="tel" class="form-control" id="guestPhoneNumber${i}" placeholder="Enter Phone Number" required>
+        <input type="email" name="g${i}-email" class="form-control" id="guestEmail${i}" placeholder="Enter Email" required>
       </div>
       <div class="row">
       <div class="col-md-6 form-group">
       <label for="guestEmail${i}">Guest ${i} Weight</label>
-      <input type="email" class="form-control" id="guestEmail${i}" placeholder="Enter Weight in lbs" required>
+      <input type="text" name="g${i}-weight" class="form-control" id="guestWeight${i}" placeholder="Enter Weight in lbs" required>
     </div>
     <div class="col-md-6 form-group">      
-    <label for="guestPhoneNumber${i}">Guest ${i} Age</label>
-      <input type="tel" class="form-control" id="guestPhoneNumber${i}" placeholder="Enter Age in years" required>
+    <label for="guestAge${i}">Guest ${i} Age</label>
+      <input type="text" name="g${i}-age" class="form-control" id="guestAge${i}" placeholder="Enter Age in years" required>
     </div>
     </div>
     `;

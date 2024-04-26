@@ -50,7 +50,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="lesson-form.html">Class Dates</a></li>
+          <li><a class="nav-link scrollto" href="lesson-dates.html">Class Dates</a></li>
           <li><a class="nav-link scrollto" href="#gallery"> Gallery</a></li>
           <li><a class="nav-link scrollto" href="#chefs">Instructors</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -102,9 +102,15 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div>
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/video-img.jpg");'>
+            <!-- Video Play Button (Venobox) -->
+            <a class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" data-vbvideo="assets/img/vid.mp4"></a>
+            <!-- Video Source (Hidden) -->
+            <video style="display: none;">
+                <source src="assets/img/vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
@@ -138,6 +144,7 @@
 
       </div>
     </section><!-- End About Section -->
+
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
       <div class="container-fluid">
@@ -243,7 +250,6 @@
               <div class="member-info">
                 <h4>Daniel Oliver</h4>
                 <span>Head Instructor</span>
-                <p> Dan has windsurf over 1500 hours</p>
               <!--   <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -285,7 +291,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <h3>Diago Goodman</h3>
+                <h3></h3>
                 <h4>Beginner Lesson - Level 1</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -298,7 +304,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <h3>Sara Wilsson</h3>
+                <h3></h3>
                 <h4>Beginner Lesson - Level 1</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -312,7 +318,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <h3>Jena Karlis</h3>
+                <h3></h3>
                 <h4>Beginner Lesson - Level 1</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -326,7 +332,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <h3>Matt Brandon</h3>
+                <h3></h3>
                 <h4>Beginner Lesson - Level 1</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -340,7 +346,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <h3>John Larson</h3>
+                <h3></h3>
                 <h4>Beginner Lesson - Level 1</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -483,7 +489,10 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/mail/mailing-list-google-sheet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.5/venobox.min.js"></script>
 
+  
   <script src="assets/vendor/mail/contact-form-to-email.js"></script>
 
   <!-- External Sources -->

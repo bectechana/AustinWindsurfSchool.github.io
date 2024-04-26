@@ -51,17 +51,17 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="lesson-form">Class Dates</a></li>
-          <li><a class="nav-link scrollto" href="#gallery"> Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#chefs">Instructors</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto" href="lesson-dates.html">Class Dates</a></li>
+          <li><a class="nav-link scrollto" href="index.html"> Gallery</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Instructors</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a target="" href="lesson-form.html" class="book-a-table-btn scrollto">Book a Lesson</a>
+      <a target="" href="lesson-dates.html" class="book-a-table-btn scrollto">Book a Lesson</a>
 
     </div>
   </header><!-- End Header -->
@@ -76,90 +76,126 @@
       </div>
 
         
-      <form class="sign-up-form" onsubmit="">
+      <form method="post" name="sign-up-form" class="sign-up-form">
         <div class="row">
           <div class="col-md-6 form-group">
             <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+              <input type="text" name="first-name" class="form-control" id="firstName" placeholder="Enter First Name" required>
             </div>
             <div class="col-md-6 form-group">
               <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+              <input type="text" name="last-name" class="form-control" id="lastName" placeholder="Enter Last Name" required>
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Ex: username@email.com" required>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Ex: username@email.com" required>
         </div>
         <div class="form-group">
           <label for="phoneNumber">Phone Number</label>
-          <input type="tel" class="form-control" id="phoneNumber" placeholder="Ex: 451-123-4567" required>
+          <input type="text" name="phone-num" class="form-control" id="phoneNumber" placeholder="Ex: 451-123-4567" required>
         </div>
         <div class="row">
           <div class="col-md-6 form-group">
             <label for="emergencyContactName">Emergency Contact First and Last Name</label>
-            <input type="text" class="form-control" id="emergencyContactName" placeholder="Enter First and Last Name" required>
+            <input type="text" name="eme-name" class="form-control" id="emergencyContactName" placeholder="Enter First and Last Name" required>
           </div>
           <div class="col-md-6 form-group">
             <label for="emergencyContactPhone">Emergency Contact Phone Number</label>
-            <input type="tel" class="form-control" id="emergencyContactPhone" placeholder="Ex: 451-123-4567" required>
+            <input type="tel" name="eme-phone" class="form-control" id="emergencyContactPhone" placeholder="Ex: 451-123-4567" required>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 form-group">
             <label for="age">Age</label>
-            <input type="number" class="form-control" id="age" placeholder="" required>
+            <input type="number" name="age" class="form-control" id="age" placeholder="" required>
             <small id="emailHelp" class="form-text text-muted">If participant is under 11 years, please call 425-802-2808 before booking to confirm availability</small>
           </div>
           <div class="col-md-6 form-group">
             <label for="weight">Weight in pounds (lbs)</label>
-            <input type="number" class="form-control" id="weight" placeholder="" required>
+            <input type="number" name="weight" class="form-control" id="weight" placeholder="" required>
             <small id="emailHelp" class="form-text text-muted">If participant is under 100 lbs, please call 425-802-2808 before booking to confirm availability</small>
           </div>
           <div class="form-group">
-            <label for="numPeople">How many people are signing up? (Max 6)</label>
+            <label for="numPeople">How many people are signing up? (Max 5)</label>
             <select class="form-control" id="numPeople" required onchange="updateGuestFields()">
               <option value="">Select number of people</option>
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
             </select>
           </div>
           <div id="guestDetails"></div>
         </div>
         <div class="form-group">
           <label for="swimConsent">Do you acknowledge that you (and the people you are signning up for) know how to <strong>swim, tread water,</strong> and are okay with having your <strong>head underwater</strong> briefly (3 seconds)?</label>
-          <input class="form-check-input" type="checkbox" id="swimConsent" required>
+          <input class="form-check-input" type="checkbox" name="swim-consent" id="swimConsent" value="yes" required>
           <label class="form-check-label" for="swimConsent">
-            <strong>I Achknoledge</strong>
+            <strong>I Acknowledge</strong>
           </label>
         </div>     
         <div class="form-group">
           <label for="swimTestConsent">If requested by the instructor, would you be okay taking a short swim test? (20 ft of swimming)</label>
-          <input class="form-check-input" type="checkbox" id="swimTestConsent" required>
-          <label class="form-check-label" for="swimTestConsent">
-            <strong>I Agree</strong>
+          <div class="col-sm-10">
+            <input class="form-check-input" name="swim-test" type="checkbox" id="swimTestConsent" value="yes" required>
+            <label class="form-check-label" for="swimTestConsent">
+              <strong>I Agree</strong>
+          </div>
           </label>
         </div>
         <div class="form-group">
           <label for="preferredDates">Pick a Weekend:</label>
-          <select class="form-control" id="preferredDates" required>
+          <select class="form-control" id="preferredDates" name="weekend" required>
               <option value="" disabled selected>Select a date</option>
-              <option value="March 30-31">March 30/31</option>
-              <option value="April 13-14">April 13/14</option>
               <option value="April 27-28">April 27/28</option>
               <option value="May 4-5">May 4/5</option>
               <option value="May 18-19">May 18/19</option>
               <option value="May 11-12">May 11/12</option>
               <option value="June 12">June 1/2</option>
           </select>
-      </div>
-      
+        </div>
+        <div class="form-group">
+          <label for="health">If you have any medical/health conditions that may affect your learning experience, please call 425-802-2808 before signing up.</label>
+          <div class="col-sm-10">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="inlineRadio1" name="health" value="no">
+              <label class="form-check-label" for="inlineRadio1">No, none that would affect my performance in the class.</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineRadio2" name="health" value="yes">
+              <label class="form-check-label" for="inlineRadio2">Yes, and I called the instructor to ensure I can participate.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="health">Do you want your email added to the Austin Windsurf School newsletter for future class and event announcements?
+          </label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input" type="radio" id="" name="new-letter" value="no">
+              <label class="form-check-label" for="">No</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="" name="new-letter" value="yes">
+              <label class="form-check-label" for="">Yes</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="health">Be aware that class location will depend on the wind and weather. Class location will be sent out in an email in advance of the lesson.
+          </label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input" type="radio" name="loca" id="" value="yes">
+              <label class="form-check-label" for="">Roger that!</label>
+            </div>
+          </div>
+        </div>
+
         <div class="text-center">
-          <button type="submit">Submit</button>
+          <button type="submit" value="Submit" id="submit">Check Out</button>
         </div>
       </form>
       
@@ -196,6 +232,8 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/mail/sign-up-google-sheet.js"></script>
+
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
