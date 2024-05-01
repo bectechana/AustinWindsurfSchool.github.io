@@ -229,9 +229,6 @@ h6 {
     font-size: 11px;
   }
 }
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
 .scrollable-container {
   height: 200px; /* Set a fixed height */
   overflow-y: auto; /* Enable vertical scrolling */
@@ -240,9 +237,13 @@ h6 {
   margin-bottom: 20px; /* Adds space below the container */
 }
 
+
 .agreement-text {
   margin-bottom: 10px; /* Adds space between the text and the checkbox */
 }
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
 /**
 * Desktop Navigation
 */

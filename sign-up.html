@@ -52,11 +52,6 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html">About</a></li>
-          <li><a class="nav-link scrollto" href="lesson-dates.html">Class Dates</a></li>
-          <li><a class="nav-link scrollto" href="index.html"> Gallery</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Instructors</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -183,11 +178,11 @@
           </label>
           <div class="col-sm-10">
             <div class="form-check form-check-inline ">
-              <input class="form-check-input" type="radio" id="" name="new-letter" value="no">
+              <input class="form-check-input" type="radio" id="" name="new-letter" value="no" required>
               <label class="form-check-label" for="">No</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="" name="new-letter" value="yes">
+              <input class="form-check-input" type="radio" id="" name="new-letter" value="yes" required>
               <label class="form-check-label" for="">Yes</label>
             </div>
           </div>
@@ -197,42 +192,38 @@
           </label>
           <div class="col-sm-10">
             <div class="form-check form-check-inline ">
-              <input class="form-check-input" type="radio" name="loca" id="" value="yes">
+              <input class="form-check-input" type="radio" name="loca" id="" value="yes" required>
               <label class="form-check-label" for="">Roger that!</label>
             </div>
           </div>
         </div>
         <div class="form-group">
-          <label for="health">I permit Austin Windsurf School LLC to use photos and quotes of the participant in their
-            publications.
+          <label for="health">I permit Austin Windsurf School LLC to use photos and quotes of the participant in their publications.
           </label>
             <div class="col-sm-10">
-              <input class="form-check-input" name="swim-test" type="checkbox" id="photo" value="yes" required>
+              <input class="form-check-input" type="checkbox" name="photo" value="yes" required>
               <label class="form-check-label" for="swimTestConsent">
                 <strong>I Agree</strong>
             
             </label>
           </div>
         </div>
-      
-      
+
         <!-- Participant Agreement of Risk section -->
         <div class="form-group">
           <div class="text-center">
-
             <label for="riskAgreement">Austin Windsurf School Participant Agreement of Risk</label>
           </div>
           <div class="scrollable-container">
-      <p>Please read the following statement carefully and acknowledge that you understand and accept all provisions by checking the box below.</p>
-      <div class="agreement-text">
+          <p>Please read the following statement carefully and acknowledge that you understand and accept all provisions by checking the box below.</p>
+          <div class="agreement-text">
           <p><strong>Agreement of Risk:</strong> 
           </div>        
           <div>
             In consideration of the services of Austin Windsurf School LLC, their agents, owners,
             officers, volunteers, participants, employees, and all other persons or entities acting in any
             capacity on their behalf (hereinafter collectively referred to as “AWS”),
-          </div>
-          
+          </div>        
           <div>
             <strong>(1)</strong> I acknowledge that windsurfing, foil boarding, and stand up paddle boarding
             entails known and unanticipated risks that could result in physical or emotional
@@ -245,7 +236,6 @@
             even death; exhaustion, dehydration, sunburn; exposure to poisonous sea creatures;
             and accidental drowning.
           </div>
-          
           <div>
            <strong> (2) </strong> I agree to release, hold harmless and indemnify Austin Windsurf School, the City of
             Pflugerville, the City of Austin, their advisory councils, officers, members, agents,
@@ -281,41 +271,44 @@
                 agreement is found to be void or unenforceable, the remaining portions shall remain in
                 full force and effect.
               </div>
-            <strong>(6)</strong> I authorize the program organizers or their employees to sanction emergency treatment.            </div>
+            <strong>(6)</strong> I authorize the program organizers or their employees to sanction emergency treatment.           
+           </div>
           </div>
             <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="agreementOfRisk" id="agreementOfRisk" required>
-          <label class="form-check-label" for="agreementOfRisk" name="risk" value="yes">
+          <input class="form-check-input" type="checkbox" name="risk" value="yes" required>
+          <label class="form-check-label" for="agreementOfRisk">
               I have read and agree to the Participant Agreement of Risk.
           </label>      
           </div>
         </div>
-        
+        <!-- Minor Agreement of Risk section -->
         <div class="form-group">
           <div class="text-center">
             <label for="minorConsent">Parent’s or Guardian’s Additional Identification</label>
         </div>
             <p><strong>Must be completed for participants under the age of 18.</strong></p>
-    <p>In consideration of the minor being permitted by Austin Windsurf School (AWS) to participate in its activities and to use its equipment and facilities, please enter the minor's name:</p>
-    <input type="text" class="form-control" id="minorName" placeholder="Print all Minor’s Name">
+        <p>In consideration of the minor being permitted by Austin Windsurf School (AWS) to participate in its activities and to use its equipment and facilities, please enter the minor's name:</p>
+        <input type="text" class="form-control" id="minorName" placeholder="Print all Minor’s Name or N/A" name="parentAgreement" value="yes"> 
 
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="parentPresent" name="parentPresent" required>
-        <label class="form-check-label" for="parentPresent" name="parentAgreement" value="">
-            All children under the age of 15 must have a parent present during a lesson.
-        </label>
-    </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="parentPresent" required>
+            <label class="form-check-label" for="parentPresent">
+                All children under the age of 15 must have a parent present during a lesson.
+            </label>
+        </div>
 
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="lifejacketRequired" name="lifejacketRequired" required>
-        <label class="form-check-label" for="lifejacketRequired" name="parentAgreement" value="yes">
-            All children under the age of 18 must wear a lifejacket.
-        </label>
-    </div>
-</div>
-
-
-
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="lifejacketRequired" name="lifejacketRequired" required>
+            <label class="form-check-label" for="lifejacketRequired">
+                All children under the age of 18 must wear a lifejacket.
+            </label>
+        </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Ex: username@email.com" required>
+        </div>
 
         <div class="text-center">
           <button type="submit" value="Submit" id="submit">Check Out</button>
@@ -324,8 +317,8 @@
       
 
     </div> 
-    
-</section><!-- End Contact Section -->
+
+    </section>
 
 
   </main>
