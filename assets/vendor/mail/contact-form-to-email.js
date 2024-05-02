@@ -1,5 +1,6 @@
 function emailSend() {
-    var form = document.querySelector('.contact-email-form');
+    var form = document.querySelector('contact-email-form');
+   // const form = document.forms['subscription-form-mailing-list']
 
     var userName = document.getElementById('name').value;
     var phone = document.getElementById('phone').value;
