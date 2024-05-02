@@ -76,8 +76,8 @@
 
                  <div> <!-- ======= Signup form =======-->
                     <form method="post" action="" name="subscription-form-mailing-list">
-                      <input type="text" name="first-name" placeholder="First & Last Name" class="name-signup-email animate__animated animate__fadeInUp" required>
-                      <input type="email" name="your-email" placeholder="username@email.com" class="book-signup-email animate__animated animate__fadeInUp" required>
+                      <input type="text" name="first-name" placeholder="Enter First & Last Name" class="name-signup-email animate__animated animate__fadeInUp" required>
+                      <input type="email" name="your-email" placeholder="Enter Email" class="book-signup-email animate__animated animate__fadeInUp" required>
                       <div>
                         <button type="submit" value="Submit" id="submit"  class="btn-book animate__animated animate__fadeInUp" >Subscribe Now</button>
                       </div>
@@ -407,7 +407,9 @@
 
         </div>
 
-        <form  class="contact-email-form" onsubmit="return emailSend();">
+        <form  class="contact-email-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="bc97a62a-c9ba-44a3-a938-4155b00c62a0">
+
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
@@ -617,7 +619,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.5/venobox.min.js"></script>
 
   
+<!--<script src="assets/vendor/mail/mailing-list-google-sheet.js"></script> -->
   <script src="assets/vendor/mail/contact-form-to-email.js"></script>
+
 
   <!-- External Sources -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

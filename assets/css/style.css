@@ -607,7 +607,7 @@ h6 {
   animation-delay: 0.8s;
   color: rgb(173, 163, 163);
   border: 2px solid #ffb03b;
-  background: transparent; /* Add this if you want the input field to be transparent */
+  /* background: transparent;  Add this if you want the input field to be transparent */
 }
 
 #hero .btn-book:hover {
