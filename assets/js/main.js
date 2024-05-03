@@ -5,15 +5,17 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function toggleMinorForm(isMinor) {
+  const form = document.getElementById('minorConsentForm');
+  if (isMinor) {
+    form.classList.remove('hidden');
+  } else {
+    form.classList.add('hidden');
+  }
+}
 
 document.addEventListener("DOMContentLoaded", function() {
   const classData = [
-    {
-        title: "April 27/28 (SOLD OUT)",
-        price: "$100.00",
-        description: "",
-        filter: "filter-beginner"
-    },
     {
         title: "May 5th 12:30-3:00 PM (SOLD OUT)",
         price: "$100.00",
@@ -21,45 +23,76 @@ document.addEventListener("DOMContentLoaded", function() {
         filter: "filter-beginner"
     },
     {
-      title: "May 11/12",
+      title: "May 11/12 12:30 PM - 3:00 PM",
       price: "$145.00",
       description: "Beginner 2 day class, all gear is provided.",
       filter: "filter-beginner"
     },
     {
-      title: "June 1/2 9:00 AM - 11:30 AM",
+      title: "May 11/12 3:30 PM - 6:00 PM",
       price: "$145.00",
       description: "Beginner 2 day class, all gear is provided.",
       filter: "filter-beginner"
     },
     {
-      title: "June 1/2 3:30 PM - 6:00 PM",
-      price: "$145.00",
-      description: "Level 1 - Beginner 2 day class, all gear is provided.",
-      filter: "filter-beginner"
-    },
-    {
-      title: "April 27/28 12:30 PM - 3:00 PM",
-      price: "$145.00",
-      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
-      filter: "filter-intermediate"
-    },
-    {
-      title: " May 11/12 12:30 PM - 3:00 PM",
+      title: " May 11/12 3:30 PM - 6:00 PM",
       price: "$145.00",
       description: "Level 2 -Intermediate 2 day class, all gear is provided.",
       filter: "filter-intermediate"
     },
     {
-      title: "June 1/2 12:30 PM - 3:00 PM",
+      title: "June 1/2 9:00 AM - 11:30 AM",
+      price: "$145.00",
+      description: "Beginner 2 day class, all gear is provided, call us if you wondering on your skill level.",
+      filter: "filter-beginner"
+    },
+    {
+      title: "June 1/2 12:30 PM - 3:00 PM (SOLD OUT)",
+      price: "$145.00",
+      description: "Level 1 - Beginner 2 day class, all gear is provided.",
+      filter: "filter-beginner"
+  },
+    {
+      title: "June 1/2 3:30 PM - 6:00 PM",
+      price: "$145.00",
+      description: "Level 1 - Beginner 2 day class, all gear is provided",
+      filter: "filter-beginner"
+    },
+
+    {
+      title: "June 1/2 3:30 PM - 6:00 PM",
       price: "$145.00",
       description: "Level 2 - Intermediate 2 day class, all gear is provided.",
       filter: "filter-intermediate"
   },
     {
-      title: "June 1/2 12:30 PM - 3:00 PM",
-      price: "$200.00",
+      title: "July 1/2 8:00 AM - 10:30 AM",
+      price: "$145.00",
+      description: "Level 1 - Beginner 2 day class, all gear is provided.",
+      filter: "filter-beginner"
+  },
+    {
+      title: "July 1/2 8:00 AM - 10:30 AM",
+      price: "$145.00",
       description: "Level 2 - Intermediate 2 day class, all gear is provided.",
+      filter: "filter-intermediate"
+  },
+    {
+      title: "August 3/4 8:00 AM - 10:30 AM",
+      price: "$145.00",
+      description: "Level 1 - Beginner 2 day class, all gear is provided.",
+      filter: "filter-beginner"
+  },
+    {
+      title: "August 3/4 8:00 AM - 10:30 AM",
+      price: "$145.00",
+      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
+      filter: "filter-intermediate"
+  },
+    {
+      title: "Private Lessons",
+      price: "$100-$200",
+      description: "Please call to setup a private lesson",
       filter: "filter-private"
   },
     
