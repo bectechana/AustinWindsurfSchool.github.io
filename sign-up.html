@@ -35,14 +35,14 @@
   </section>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center fixed-top ">
+  <section id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
-  <i class="bi bi-phone d-flex align-items-center"><span>425-208-2808</span></i>
+      <i class="bi bi-phone d-flex align-items-center"><span>425-208-2808</span></i>
       <i class="bi bi-envelope ms-4 d-none d-lg-flex align-items-center"><span>AustinWindsurfSchool@gmail.com</span></i>    </div>
   </section>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
+  <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
@@ -55,12 +55,11 @@
         </ul>
       </nav><!-- .navbar -->
 
-      <a target="" href="lesson-dates.html" class="book-a-table-btn scrollto">Book a Lesson</a>
+      <a target="" href="lesson-dates.html" class="book-a-table-btn scrollto">Book A Class</a>
 
     </div>
   </header><!-- End Header -->
-
-  <main id="main-inner-form">
+    
  <!-- ======= Contact Section ======= -->
  <section id="contact" class="contact">
     <div class="container">
@@ -113,7 +112,7 @@
           <div class="form-group">
             <label for="numPeople">How many people are signing up? (Max 5)</label>
             <select class="form-control" id="numPeople" required onchange="updateGuestFields()">
-              <option value="">Select number of people</option>
+              <option value="">Select number of people or enter 0 if you are only signing yourself.</option>
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -143,20 +142,22 @@
           <label for="preferredDates">Pick a Weekend:</label>
           <select class="form-control" id="preferredDates" name="weekend" required>
               <option value="" disabled selected>Select a date</option>
-              <option value="April 27-28">April 27/28</option>
               <option value="May 4-5">May 4/5</option>
-              <option value="May 18-19">May 18/19</option>
-              <option value="May 11-12">May 11/12</option>
-              <option value="June 12">June 1/2</option>
+              <option value="May 18-19">May 18-19</option>
+              <option value="May 11-12">May 11-12</option>
+              <option value="June 12">June 1-2</option>
+              <option value="July">July 13-14</option>
+              <option value="August">August 3-4</option>
           </select>
         </div>
         <div class="form-group">
           <label for="preferredDates">Pick a Time:</label>
           <select class="form-control" id="preferredDates" name="time" required>
               <option value="" disabled selected>Select a time</option>
+              <option value="8-1030">8:00 AM - 10:30AM (summer)</option>
               <option value="9-1130">9:00 AM - 11:30AM</option>
-              <option value="1200-230">12:00 PM - 2:30 PM</option>
-              <option value="300-530">3:00pm - 5:30 PM</option>
+              <option value="1230-300">12:30 PM - 3:00 PM</option>
+              <option value="330-600">3:30pm - 6:00 PM</option>
           </select>
         </div>
         <div class="form-group">
@@ -282,39 +283,43 @@
         </div>
         <!-- Minor Agreement of Risk section -->
         <div class="form-group">
-          <div class="text-center">
-            <label for="minorConsent">Parent’s or Guardian’s Additional Identification</label>
+          <label>Are you signing up a minor (age below 16)?</label><br>
+          <input type="radio" id="yesMinor" name="minorRadio" value="yes" onclick="toggleMinorForm(true)">
+          <label for="yesMinor">Yes</label><br>
+          <input type="radio" id="noMinor" name="minorRadio" value="no" onclick="toggleMinorForm(false)">
+          <label for="noMinor">No</label>
         </div>
-            <p><strong>Must be completed for participants under the age of 18.</strong></p>
-        <p>In consideration of the minor being permitted by Austin Windsurf School (AWS) to participate in its activities and to use its equipment and facilities, please enter the minor's name:</p>
-        <input type="text" class="form-control" id="minorName" placeholder="Print all Minor’s Name or N/A" name="parentAgreement" value="yes"> 
-
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="parentPresent" required>
-            <label class="form-check-label" for="parentPresent">
-                All children under the age of 15 must have a parent present during a lesson.
-            </label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="lifejacketRequired" name="lifejacketRequired" required>
-            <label class="form-check-label" for="lifejacketRequired">
-                All children under the age of 18 must wear a lifejacket.
-            </label>
-        </div>
-        </div>
-        
-        <div class="form-group">
-          <label>Purchase your class spot, required for reserving a place in class:
-          <!-- Hyperlink to purchase page -->
-          <a href="https://austin-windsurf-school.square.site/s/shop" target="_blank" class="btn btn-link">Purchase Here</a>
-        </label>
-          <div class="col-sm-10">
-              <input class="form-check-input" type="checkbox" name="loca" id="purchaseCheckbox" value="yes" required>
-              <label class="form-check-label" for="purchaseCheckbox">Purchased!!</label>
-          </div>
-      </div>
       
+        <div id="minorConsentForm" class="hidden">
+          <!-- Minor Consent Form -->
+          <div class="text-center">
+            <label>Parent’s or Guardian’s Additional Identification</label>
+          </div>
+          <p><strong>Must be completed for participants under the age of 18.</strong></p>
+          <p>In consideration of the minor being permitted by Austin Windsurf School (AWS) to participate in its activities and to use its equipment and facilities, please enter the minor's name:</p>
+          <div class="form-group">
+            <input type="text" class="form-control" id="minorName" placeholder="Print all Minor’s Name" name="parentAgreement" required>
+          </div>
+      
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="parentPresent" required>
+            <label for="parentPresent">All children under the age of 15 must have a parent present during a lesson.</label>
+          </div>
+      
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="lifejacketRequired" name="lifejacketRequired" required>
+            <label for="lifejacketRequired">All children under the age of 18 must wear a lifejacket.</label>
+          </div>
+      
+        </div>
+          <div class="form-group">
+            <label>Purchase your class spot, required for reserving a place in class:</label>
+            <a href="https://austin-windsurf-school.square.site/s/shop" target="_blank" class="btn btn-link">Purchase Here</a>
+            <div class="col-sm-10">
+              <input class="form-check-input" type="checkbox" name="loca" id="purchaseCheckbox" value="yes" required>
+              <label for="purchaseCheckbox">Purchased!!</label>
+            </div>
+          </div>
 
         <div class="text-center">
           <button type="submit" value="Submit" id="submit">Submit</button>
@@ -324,19 +329,16 @@
 
     </div> 
 
-    </section>
-
-
-  </main>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Follow us </h3>
-      <div class="social-links">
-        <a target="_blank" href="https://www.tiktok.com/@doliverwindsurf?lang=en" class="twitter"><i class="bx bxl-tiktok"></i></a>
-        <a target="_blank" href="https://www.facebook.com/austinwindsurfschool/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a target="_blank" href="https://www.instagram.com/austinwindsurfschool/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+ </section>
+ 
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+   <div class="container">
+     <h3>Follow us </h3>
+     <div class="social-links">
+       <a target="_blank" href="https://www.tiktok.com/@doliverwindsurf?lang=en" class="twitter"><i class="bx bxl-tiktok"></i></a>
+       <a target="_blank" href="https://www.facebook.com/austinwindsurfschool/" class="facebook"><i class="bx bxl-facebook"></i></a>
+       <a target="_blank" href="https://www.instagram.com/austinwindsurfschool/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
       </div>
       <div class="copyright">
         GO WINDSURF with Austin Windsurf! <br>
@@ -346,17 +348,19 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-</main>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/mail/mailing-list-google-sheet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.5/venobox.min.js"></script>
 
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/mail/sign-up-google-sheet.js"></script>
+    <script src="assets/vendor/mail/sign-up-google-sheet.js"></script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
