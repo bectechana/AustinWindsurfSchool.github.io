@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R3380C1FJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7R3380C1FJ');
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -58,7 +68,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a target="" href="sign-up.html" class="book-a-table-btn scrollto">Book a Lesson</a>
+      <a target="" href="sign-up.html" class="book-a-table-btn">Book A Class</a>
 
     </div>
   </header><!-- End Header -->
@@ -542,24 +552,25 @@
         <h2>Weekend <span>Lesson Dates</span></h2>
       </div>
         
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-beginner">Beginner Classes</li>
-              <li data-filter=".filter-intermediate">Intermediate Classes</li>
-              <li data-filter=".filter-private">Private Lessons</li>
-            </ul>
-          </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-flters">
+            <li data-filter="*" class="filter-active">Show All</li>
+            <li data-filter=".filter-beginner">Beginner Classes</li>
+            <li data-filter=".filter-intermediate">Intermediate Classes</li>
+            <li data-filter=".filter-private">Private Lessons</li>
+          </ul>
         </div>
+      </div>
         
-        <div class="row menu-container" id="class-list">
+      <div class="row menu-container" id="class-list">
+      </div>    
+
+      <div class="text-center">
+        <button type="" value="" id=""  class="sign-up-btn" >Book A Class</button>
       </div>    
     
   </div>
-  <div>
-    <button type="" value="" id=""  class="sign-up-btn animate__animated animate__fadeInUp" >Book Your Class</button>
-  </div>    
     </section><!-- End Menu Section -->
     
     <hr> <!-- New line-->
@@ -619,7 +630,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.5/venobox.min.js"></script>
 
   
-<!--<script src="assets/vendor/mail/mailing-list-google-sheet.js"></script> -->
   <script src="assets/vendor/mail/contact-form-to-email.js"></script>
 
 
