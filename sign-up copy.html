@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R3380C1FJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-7R3380C1FJ');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R3380C1FJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-7R3380C1FJ');
+  </script>
+  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -78,7 +79,7 @@
       </div>
 
         
-      <form method="POST" name="sign-up-form" class="sign-up-form">
+      <form method="post" name="sign-up-form" class="sign-up-form">
         <div class="row">
           <div class="col-md-6 form-group">
             <label for="firstName">First Name</label>
@@ -99,6 +100,16 @@
         </div>
         <div class="row">
           <div class="col-md-6 form-group">
+            <label for="emergencyContactName">Emergency Contact First and Last Name</label>
+            <input type="text" name="eme-name" class="form-control" id="emergencyContactName" placeholder="Enter First and Last Name" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="emergencyContactPhone">Emergency Contact Phone Number</label>
+            <input type="tel" name="eme-phone" class="form-control" id="emergencyContactPhone" placeholder="Ex: 451-123-4567" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
             <label for="age">Age</label>
             <input type="number" name="age" class="form-control" id="age" placeholder="" required>
             <small id="emailHelp" class="form-text text-muted">If participant is under 11 years, please call 425-802-2808 before booking to confirm availability</small>
@@ -111,13 +122,12 @@
           <div class="form-group">
             <label for="numPeople">How many people are signing up? (Max 5)</label>
             <select class="form-control" id="numPeople" required onchange="updateGuestFields()">
-              <option value="">Select number of people or enter 0 if you are only signing yourself up.</option>
+              <option value="">Select number of people or enter 0 if you are only signing yourself.</option>
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="4">5</option>
             </select>
           </div>
           <div id="guestDetails"></div>
@@ -125,8 +135,8 @@
         <div class="form-group">
           <label for="swimConsent">Do you acknowledge that you (and the people you are signning up for) know how to <strong>swim, tread water,</strong> and are okay with having your <strong>head underwater</strong> briefly (3 seconds)?</label>
           <input class="form-check-input" type="checkbox" name="swim-consent" id="swimConsent" value="yes" required>
-          <label class="form-check-label" for="swimConsent">I Acknowledge          
-
+          <label class="form-check-label" for="swimConsent">
+            <strong>I Acknowledge</strong>
           </label>
         </div>     
         <div class="form-group">
@@ -134,23 +144,16 @@
           <div class="col-sm-10">
             <input class="form-check-input" name="swim-test" type="checkbox" id="swimTestConsent" value="yes" required>
             <label class="form-check-label" for="swimTestConsent">
-              I Agree
-            </label>
-            </div>
+              <strong>I Agree</strong>
+          </div>
           </label>
         </div>
         <div class="form-group">
-          <label><strong> Purchase your class spot, required for reserving a place in class: </strong></label>
-          <a href="https://austin-windsurf-school.square.site/s/shop" target="_blank" class="btn btn-link">Purchase Here</a>
-          <div class="col-sm-10">
-            <input class="form-check-input" type="checkbox" name="purchased" id="purchaseCheckbox" value="yes">
-            <label for="purchaseCheckbox">Purchased!!</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="preferredDates">Chosen Weekend: </label>
+          <label for="preferredDates">Pick a Weekend:</label>
           <select class="form-control" id="preferredDates" name="weekend" required>
               <option value="" disabled selected>Select a date</option>
+              <option value="May 4-5">May 4/5</option>
+              <option value="May 18-19">May 18-19</option>
               <option value="May 11-12">May 11-12</option>
               <option value="June 12">June 1-2</option>
               <option value="July">July 13-14</option>
@@ -158,7 +161,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="preferredDates">Chosen Time:</label>
+          <label for="preferredDates">Pick a Time:</label>
           <select class="form-control" id="preferredDates" name="time" required>
               <option value="" disabled selected>Select a time</option>
               <option value="8-1030">8:00 AM - 10:30AM (summer)</option>
@@ -185,11 +188,11 @@
           </label>
           <div class="col-sm-10">
             <div class="form-check form-check-inline ">
-              <input class="form-check-input" type="radio" id="" name="news-letter" value="no" required>
+              <input class="form-check-input" type="radio" id="" name="new-letter" value="no" required>
               <label class="form-check-label" for="">No</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="" name="news-letter" value="yes" required>
+              <input class="form-check-input" type="radio" id="" name="new-letter" value="yes" required>
               <label class="form-check-label" for="">Yes</label>
             </div>
           </div>
@@ -210,7 +213,8 @@
             <div class="col-sm-10">
               <input class="form-check-input" type="checkbox" name="photo" value="yes" required>
               <label class="form-check-label" for="swimTestConsent">
-                I Agree
+                <strong>I Agree</strong>
+            
             </label>
           </div>
         </div>
@@ -281,7 +285,7 @@
            </div>
           </div>
             <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="riskAgreement" value="yes" required>
+          <input class="form-check-input" type="checkbox" name="risk" value="yes" required>
           <label class="form-check-label" for="agreementOfRisk">
               I have read and agree to the Participant Agreement of Risk.
           </label>      
@@ -304,27 +308,32 @@
           <p><strong>Must be completed for participants under the age of 18.</strong></p>
           <p>In consideration of the minor being permitted by Austin Windsurf School (AWS) to participate in its activities and to use its equipment and facilities, please enter the minor's name:</p>
           <div class="form-group">
-            <input type="text" class="form-control" id="minorName" placeholder="Print all Minor’s Name" name="parentAgreement" >
+            <input type="text" class="form-control" id="minorName" placeholder="Print all Minor’s Name" name="parentAgreement" required>
           </div>
       
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="parentPresent" >
+            <input class="form-check-input" type="checkbox" id="parentPresent" required>
             <label for="parentPresent">All children under the age of 15 must have a parent present during a lesson.</label>
           </div>
       
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="lifejacketRequired" name="lifejacketRequired" >
+            <input class="form-check-input" type="checkbox" id="lifejacketRequired" name="lifejacketRequired" required>
             <label for="lifejacketRequired">All children under the age of 18 must wear a lifejacket.</label>
           </div>
       
         </div>
+          <div class="form-group">
+            <label>Purchase your class spot, required for reserving a place in class:</label>
+            <a href="https://austin-windsurf-school.square.site/s/shop" target="_blank" class="btn btn-link">Purchase Here</a>
+            <div class="col-sm-10">
+              <input class="form-check-input" type="checkbox" name="loca" id="purchaseCheckbox" value="yes" required>
+              <label for="purchaseCheckbox">Purchased!!</label>
+            </div>
+          </div>
 
         <div class="text-center">
           <button type="submit" value="Submit" id="submit">Submit</button>
-          <p style="margin-top: 10px;">*Form will take 5-45 seconds to submit, please wait.</p>
-
         </div>
-  
       </form>
       
 
@@ -357,7 +366,9 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/mail/mailing-list-google-sheet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.5/venobox.min.js"></script>
 
     <script src="assets/vendor/mail/sign-up-google-sheet.js"></script>
 
