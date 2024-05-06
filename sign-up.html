@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R3380C1FJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R3380C1FJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7R3380C1FJ');
+    </script>
 
-    gtag('config', 'G-7R3380C1FJ');
-  </script>
-  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -79,15 +78,253 @@
       </div>
 
         
-  
+      <form method="POST" name="sign-up-form" class="sign-up-form">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="firstName">First Name</label>
+              <input type="text" name="first-name" class="form-control" id="firstName" placeholder="Enter First Name" required>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="last-name" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Ex: username@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text" name="phone-num" class="form-control" id="phoneNumber" placeholder="Ex: 451-123-4567" required>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="age">Age</label>
+            <input type="number" name="age" class="form-control" id="age" placeholder="" required>
+            <small id="emailHelp" class="form-text text-muted">If participant is under 11 years, please call 425-802-2808 before booking to confirm availability</small>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="weight">Weight in pounds (lbs)</label>
+            <input type="number" name="weight" class="form-control" id="weight" placeholder="" required>
+            <small id="emailHelp" class="form-text text-muted">If participant is under 100 lbs, please call 425-802-2808 before booking to confirm availability</small>
+          </div>
           <div class="form-group">
-            <label>Please fill out the form, thank you:</label>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSt1-wRWeraVG0t9iRr6CgzHKgL3M9i9YhQc5pgMbCLNzUcA/viewform" target="_blank" class="btn btn-link">Class form</a>
-            <div class="col-sm-10">
+            <label for="numPeople">How many people are signing up? (Max 5)</label>
+            <select class="form-control" id="numPeople" required onchange="updateGuestFields()">
+              <option value="">Select number of people or enter 0 if you are only signing yourself up.</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="4">5</option>
+            </select>
+          </div>
+          <div id="guestDetails"></div>
+        </div>
+        <div class="form-group">
+          <label for="swimConsent">Do you acknowledge that you (and the people you are signning up for) know how to <strong>swim, tread water,</strong> and are okay with having your <strong>head underwater</strong> briefly (3 seconds)?</label>
+          <input class="form-check-input" type="checkbox" name="swim-consent" id="swimConsent" value="yes" required>
+          <label class="form-check-label" for="swimConsent">I Acknowledge          
+
+          </label>
+        </div>     
+        <div class="form-group">
+          <label for="swimTestConsent">If requested by the instructor, would you be okay taking a short swim test? (20 ft of swimming)</label>
+          <div class="col-sm-10">
+            <input class="form-check-input" name="swim-test" type="checkbox" id="swimTestConsent" value="yes" required>
+            <label class="form-check-label" for="swimTestConsent">
+              I Agree
+            </label>
+            </div>
+          </label>
+        </div>
+        <div class="form-group">
+          <label><strong> Purchase your class spot, required for reserving a place in class: </strong></label>
+          <a href="https://austin-windsurf-school.square.site/s/shop" target="_blank" class="btn btn-link">Purchase Here</a>
+          <div class="col-sm-10">
+            <input class="form-check-input" type="checkbox" name="purchased" id="purchaseCheckbox" value="yes">
+            <label for="purchaseCheckbox">Purchased!!</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="preferredDates">Chosen Weekend: </label>
+          <select class="form-control" id="preferredDates" name="weekend" required>
+              <option value="" disabled selected>Select a date</option>
+              <option value="May 11-12">May 11-12</option>
+              <option value="June 12">June 1-2</option>
+              <option value="July">July 13-14</option>
+              <option value="August">August 3-4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="preferredDates">Chosen Time:</label>
+          <select class="form-control" id="preferredDates" name="time" required>
+              <option value="" disabled selected>Select a time</option>
+              <option value="8-1030">8:00 AM - 10:30AM (summer)</option>
+              <option value="9-1130">9:00 AM - 11:30AM</option>
+              <option value="1230-300">12:30 PM - 3:00 PM</option>
+              <option value="330-600">3:30pm - 6:00 PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="health">If you have any medical/health conditions that may affect your learning experience, please call 425-802-2808 before signing up.</label>
+          <div class="col-sm-10">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="inlineRadio1" name="health" value="no">
+              <label class="form-check-label" for="inlineRadio1">No, none that would affect my performance in the class.</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineRadio2" name="health" value="yes">
+              <label class="form-check-label" for="inlineRadio2">Yes, and I called the instructor to ensure I can participate.</label>
             </div>
           </div>
+        </div>
+        <div class="form-group">
+          <label for="health">Do you want your email added to the Austin Windsurf School newsletter for future class and event announcements?
+          </label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input" type="radio" id="" name="news-letter" value="no" required>
+              <label class="form-check-label" for="">No</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="" name="news-letter" value="yes" required>
+              <label class="form-check-label" for="">Yes</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="health">Be aware that class location will depend on the wind and weather. Class location will be sent out in an email in advance of the lesson.
+          </label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input" type="checkbox" name="loca" id="" value="yes" required>
+              <label class="form-check-label" for="">Roger that!</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="health">I permit Austin Windsurf School LLC to use photos and quotes of the participant in their publications.
+          </label>
+            <div class="col-sm-10">
+              <input class="form-check-input" type="checkbox" name="photo" value="yes" required>
+              <label class="form-check-label" for="swimTestConsent">
+                I Agree
+            </label>
+          </div>
+        </div>
 
-       
+        <!-- Participant Agreement of Risk section -->
+        <div class="form-group">
+          <div class="text-center">
+            <label for="riskAgreement">Austin Windsurf School Participant Agreement of Risk</label>
+          </div>
+          <div class="scrollable-container">
+          <p>Please read the following statement carefully and acknowledge that you understand and accept all provisions by checking the box below.</p>
+          <div class="agreement-text">
+          <p><strong>Agreement of Risk:</strong> 
+          </div>        
+          <div>
+            In consideration of the services of Austin Windsurf School LLC, their agents, owners,
+            officers, volunteers, participants, employees, and all other persons or entities acting in any
+            capacity on their behalf (hereinafter collectively referred to as “AWS”),
+          </div>        
+          <div>
+            <strong>(1)</strong> I acknowledge that windsurfing, foil boarding, and stand up paddle boarding
+            entails known and unanticipated risks that could result in physical or emotional
+            injury, paralysis, death, or damage to myself, to property, or to third parties. I
+            understand that such risks simply cannot be eliminated without jeopardizing the essential
+            qualities of the activity. The risks include, among other things: Being hit by board or
+            boat, sail, fin, other windsurfers or their boards, boats, trees, rocks, bottom of the
+            lake/river/body of water, and other objects in and around body of water, which could
+            result in cuts, bruises, or abrasions and concussions; sprains, broken bones, paralysis,
+            even death; exhaustion, dehydration, sunburn; exposure to poisonous sea creatures;
+            and accidental drowning.
+          </div>
+          <div>
+           <strong> (2) </strong> I agree to release, hold harmless and indemnify Austin Windsurf School, the City of
+            Pflugerville, the City of Austin, their advisory councils, officers, members, agents,
+            employees, and insurers for any claims brought by the minor for any injury or damage
+            resulting from any cause, including negligence, which arise out of participation in these
+            programs. This release is binding as to any other persons, including family members,
+            heirs, and executors. This release does not apply to gross negligence or intentional acts.
+          </div>
+            <div>
+            <p></p>
+             <p> 
+               Furthermore, AWS employees have difficult jobs to perform. They seek safety, but are
+               not infallible. They might be unaware of a participant’s fitness or abilities. They might misjudge
+               the weather or other environmental conditions. They may give incomplete warnings or
+               instructions and the equipment used might malfunction.
+              </p>
+              <div>
+
+                <strong>(3)</strong> I expressly agree and promise to accept all of the risks existing in this activity. My
+                participation in this activity is purely voluntary, and I elect to participate in spite of the
+                risks.
+              </div>
+              <div>
+
+                <strong>(4)</strong> I certify that I have adequate insurance to cover any injury or damage I may have cause
+                or suffer while participating. I further certify that I am willing to assume the risk of any
+                medical or physical condition I may have.
+              </div><div>
+
+                <strong>(5)</strong> In the event that I file a lawsuit against AWS, I agree to do so solely in the state of Texas,
+                and I further agree that the substantive law of Texas shall apply and that action without
+                regard to the conflict of law rules of that state. I agree that if any portion of this
+                agreement is found to be void or unenforceable, the remaining portions shall remain in
+                full force and effect.
+              </div>
+            <strong>(6)</strong> I authorize the program organizers or their employees to sanction emergency treatment.           
+           </div>
+          </div>
+            <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="riskAgreement" value="yes" required>
+          <label class="form-check-label" for="agreementOfRisk">
+              I have read and agree to the Participant Agreement of Risk.
+          </label>      
+          </div>
+        </div>
+        <!-- Minor Agreement of Risk section -->
+        <div class="form-group">
+          <label>Are you signing up a minor (age below 16)?</label><br>
+          <input type="radio" id="yesMinor" name="minorRadio" value="yes" onclick="toggleMinorForm(true)">
+          <label for="yesMinor">Yes</label><br>
+          <input type="radio" id="noMinor" name="minorRadio" value="no" onclick="toggleMinorForm(false)">
+          <label for="noMinor">No</label>
+        </div>
+      
+        <div id="minorConsentForm" class="hidden">
+          <!-- Minor Consent Form -->
+          <div class="text-center">
+            <label>Parent’s or Guardian’s Additional Identification</label>
+          </div>
+          <p><strong>Must be completed for participants under the age of 18.</strong></p>
+          <p>In consideration of the minor being permitted by Austin Windsurf School (AWS) to participate in its activities and to use its equipment and facilities, please enter the minor's name:</p>
+          <div class="form-group">
+            <input type="text" class="form-control" id="minorName" placeholder="Print all Minor’s Name" name="parentAgreement" >
+          </div>
+      
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="parentPresent" >
+            <label for="parentPresent">All children under the age of 15 must have a parent present during a lesson.</label>
+          </div>
+      
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="lifejacketRequired" name="lifejacketRequired" >
+            <label for="lifejacketRequired">All children under the age of 18 must wear a lifejacket.</label>
+          </div>
+      
+        </div>
+
+        <div class="text-center">
+          <button type="submit" value="Submit" id="submit">Submit</button>
+          <p style="margin-top: 10px;">*Form will take 5-45 seconds to submit, please wait.</p>
+
+        </div>
+  
       </form>
       
 
@@ -120,9 +357,7 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/mail/mailing-list-google-sheet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.5/venobox.min.js"></script>
 
     <script src="assets/vendor/mail/sign-up-google-sheet.js"></script>
 
