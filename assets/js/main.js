@@ -117,17 +117,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// video-lightbox.js
-$(document).ready(function(){
-    $('.venobox').venobox();
-});
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   // Target all elements with 'venobox' class and initialize Venobox
-//   document.querySelectorAll('.venobox').forEach(function(element) {
-//       new Venobox(element);
-//   });
-// });
+function toggleMinorForm(isMinor) {
+  const form = document.getElementById('minorConsentForm');
+  if (isMinor) {
+      form.classList.remove('hidden');
+  } else {
+      form.classList.add('hidden');
+  }
+}
+
 
 function updateGuestFields() {
   const numPeople = document.getElementById("numPeople").value;

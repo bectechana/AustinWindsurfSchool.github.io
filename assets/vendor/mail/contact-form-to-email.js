@@ -18,7 +18,7 @@ function emailSend() {
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "hana.s.bechara@gmail.com",
-        Password: "B5D4A42C735905A336D891EC665BFF03FEE9",
+        Password: "",
         To: "austinwindsurfschool@gmail.com",
         From: "hana.s.bechara@gmail.com",
         Subject: "Windsurf Email",
