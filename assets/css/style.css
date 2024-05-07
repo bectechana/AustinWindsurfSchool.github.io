@@ -195,6 +195,12 @@ h6 {
     letter-spacing: 0.5px;
     font-size: 11px;
   }
+  #hero .name-signup-email {
+    margin: 0 5px 0 0;
+    padding: 6px 16px;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+  }
 }
 .hidden {
   display: none;
@@ -603,7 +609,7 @@ h6 {
   line-height: 1;
   margin: 5px 10px;
   animation-delay: 0.8s;
-  color: rgb(173, 163, 163);
+  color: rgb(35, 33, 33);
   border: 2px solid #ffb03b;
   /* background: transparent;  Add this if you want the input field to be transparent */
 }
@@ -612,6 +618,7 @@ h6 {
   background: #e88d05;
   color: #fff;
 }
+
 
 @media (max-width: 768px) {
   #hero h2 {
@@ -627,6 +634,28 @@ h6 {
   #hero .carousel-control-prev,
   #hero .carousel-control-next {
     width: 5%;
+  }
+}
+
+
+/* Styles for smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+  #hero .btn-book,
+  #hero .name-signup-email,
+  #hero .book-signup-email {
+    margin: 3px 5px; /* Less margin */
+    padding: 6px 16px;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+  }
+
+  /* Adjust input fields and buttons for smaller screens */
+  input[type="text"],
+  input[type="email"],
+  button[type="submit"] {
+    font-size: 11px; /* Smaller font size */
+    padding: 8px 20px; /* Less padding */
+    margin: 3px 5px; /* Less margin */
   }
 }
 
@@ -790,6 +819,35 @@ section {
   background-position: center center;
   min-height: 400px;
   position: relative;
+}
+.video-box {
+  position: relative;
+  width: 100%; /* Adjust based on your layout needs */
+  max-width: 500px; /* Maximum width of the video container */
+  margin: 0 auto; /* Center the video horizontally */
+   /*padding: 20px; Add some padding around the video */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.video-box video {
+  width: 80%; /* Make the video responsive */
+  height: auto; /*Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners to the video */
+}
+
+/* Optional: Style the play button if you decide to use one */
+.video-box a[data-vbvideo] {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Optional: Style the fallback text for browsers that don't support the video tag */
+.video-box video::cue {
+  color: #333; /* Text color */
+  font-size: 14px; /* Text size */
 }
 
 .about .play-btn {
