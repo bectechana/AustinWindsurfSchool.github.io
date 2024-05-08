@@ -60,19 +60,19 @@ document.addEventListener("DOMContentLoaded", function() {
     },
 
     {
-      title: "June 1/2 3:30 PM - 6:00 PM",
+      title: "June 13/14 3:30 PM - 6:00 PM",
       price: "$145.00",
       description: "Level 2 - Intermediate 2 day class, all gear is provided.",
       filter: "filter-intermediate"
   },
     {
-      title: "July 1/2 8:00 AM - 10:30 AM",
+      title: "July 13/14 8:00 AM - 10:30 AM",
       price: "$145.00",
       description: "Level 1 - Beginner 2 day class, all gear is provided.",
       filter: "filter-beginner"
   },
     {
-      title: "July 1/2 8:00 AM - 10:30 AM",
+      title: "July 13/14 8:00 AM - 10:30 AM",
       price: "$145.00",
       description: "Level 2 - Intermediate 2 day class, all gear is provided.",
       filter: "filter-intermediate"
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
       description: "Please call to setup a private lesson",
       filter: "filter-private"
   },
-    
+
 
       // Add more classes as needed
   ];
@@ -145,7 +145,7 @@ function updateGuestFields() {
       <label for="guestEmail${i}">Guest ${i} Weight</label>
       <input type="text" name="g${i}-weight" class="form-control" id="guestWeight${i}" placeholder="Enter Weight in lbs" required>
     </div>
-    <div class="col-md-6 form-group">      
+    <div class="col-md-6 form-group">
     <label for="guestAge${i}">Guest ${i} Age</label>
       <input type="text" name="g${i}-age" class="form-control" id="guestAge${i}" placeholder="Enter Age in years" required>
     </div>
@@ -184,7 +184,7 @@ function updateGuestFields() {
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -371,7 +371,7 @@ function updateGuestFields() {
   });
 
   /**
-   * Initiate gallery lightbox 
+   * Initiate gallery lightbox
    */
   const galleryLightbox = GLightbox({
     selector: '.gallery-lightbox'
