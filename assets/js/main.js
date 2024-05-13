@@ -1,9 +1,4 @@
-/**
-* Template Name: Delicious
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+/*
 */
 function toggleMinorForm(isMinor) {
   const form = document.getElementById('minorConsentForm');
@@ -16,12 +11,6 @@ function toggleMinorForm(isMinor) {
 
 document.addEventListener("DOMContentLoaded", function() {
   const classData = [
-    {
-        title: "May 5th 12:30-3:00 PM (SOLD OUT)",
-        price: "$100.00",
-        description: "Beginner single day class, all gear is provided.",
-        filter: "filter-beginner"
-    },
     {
       title: "May 11/12 12:30 PM - 3:00 PM",
       price: "$145.00",
@@ -60,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
 
     {
-      title: "June 13/14 3:30 PM - 6:00 PM",
+      title: "June 1/2 3:30 PM - 6:00 PM",
       price: "$145.00",
       description: "Level 2 - Intermediate 2 day class, all gear is provided.",
       filter: "filter-intermediate"
@@ -92,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       title: "Private Lessons",
       price: "$100-$200",
-      description: "Please call to setup a private lesson",
+      description: "Please call to setup a private lesson, pricing varies.",
       filter: "filter-private"
   },
 
@@ -101,20 +90,23 @@ document.addEventListener("DOMContentLoaded", function() {
   ];
 
   const classList = document.getElementById("class-list");
-
   classData.forEach(cls => {
-      const item = document.createElement("div");
-      item.className = `col-lg-6 menu-item ${cls.filter}`;
-      item.innerHTML = `
-          <div class="menu-content">
-              <a href="">${cls.title}</a><span>${cls.price}</span>
-          </div>
-          <div class="menu-ingredients">
-              ${cls.description}
-          </div>
-      `;
-      classList.appendChild(item);
+    const item = document.createElement("div");
+    item.className = `col-lg-6 menu-item ${cls.filter}`;
+    // Assuming cls.price contains the original price and cls.newPrice contains the new price
+    item.innerHTML = `
+        <div class="menu-content">
+            <a href="">${cls.title}</a>
+           <span>${cls.filter === "filter-private"? "" : `<strike>$180</strike>`}
+ ${cls.price}</span>
+        </div>
+        <div class="menu-ingredients">
+            ${cls.description}
+        </div>
+    `;
+    classList.appendChild(item);
   });
+
 });
 
 
