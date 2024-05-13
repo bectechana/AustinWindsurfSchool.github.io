@@ -12,24 +12,6 @@ function toggleMinorForm(isMinor) {
 document.addEventListener("DOMContentLoaded", function() {
   const classData = [
     {
-      title: "May 11/12 12:30 PM - 3:00 PM",
-      price: "$145.00",
-      description: "Beginner 2 day class, all gear is provided.",
-      filter: "filter-beginner"
-    },
-    {
-      title: "May 11/12 3:30 PM - 6:00 PM",
-      price: "$145.00",
-      description: "Beginner 2 day class, all gear is provided.",
-      filter: "filter-beginner"
-    },
-    {
-      title: " May 11/12 3:30 PM - 6:00 PM",
-      price: "$145.00",
-      description: "Level 2 -Intermediate 2 day class, all gear is provided.",
-      filter: "filter-intermediate"
-    },
-    {
       title: "June 1/2 9:00 AM - 11:30 AM",
       price: "$145.00",
       description: "Beginner 2 day class, all gear is provided, call us if you wondering on your skill level.",
