@@ -12,53 +12,120 @@ function toggleMinorForm(isMinor) {
 document.addEventListener("DOMContentLoaded", function() {
   const classData = [
     {
-      title: "June 1/2 9:00 AM - 11:30 AM",
-      price: "$145.00",
-      description: "Beginner 2 day class, all gear is provided, call us if you wondering on your skill level.",
-      filter: "filter-beginner"
-    },
-    {
-      title: "June 1/2 12:30 PM - 3:00 PM (SOLD OUT)",
+      title: "July 13/14 8:00 AM - 10:30 AM (SOLD OUT)",
       price: "$145.00",
       description: "Level 1 - Beginner 2 day class, all gear is provided.",
       filter: "filter-beginner"
   },
     {
-      title: "June 1/2 3:30 PM - 6:00 PM",
+      title: "July 13/14 8:00 AM - 10:30 AM (SOLD OUT)",
       price: "$145.00",
-      description: "Level 1 - Beginner 2 day class, all gear is provided",
+      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
+      filter: "filter-intermediate"
+  },
+    {
+      title: "August 3/4 8:00 AM - 10:30 AM (SOLD OUT)",
+      price: "$145.00",
+      description: "Level 1 - Beginner 2 day class, all gear is provided.",
       filter: "filter-beginner"
-    },
+  },
+    {
+      title: "August 3/4 8:00 AM - 10:30 AM (SOLD OUT)",
+      price: "$145.00",
+      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
+      filter: "filter-intermediate"
+  },
+  {
+    title: "September 28-29, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-september"
+  },
+  {
+    title: "September 28-29, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-september"
+  },
+  {
+    title: "September 28-29, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-september"
+  },
 
-    {
-      title: "June 1/2 3:30 PM - 6:00 PM",
-      price: "$145.00",
-      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
-      filter: "filter-intermediate"
+  {
+    title: "October 12-13, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-october"
   },
-    {
-      title: "July 13/14 8:00 AM - 10:30 AM",
-      price: "$145.00",
-      description: "Level 1 - Beginner 2 day class, all gear is provided.",
-      filter: "filter-beginner"
+  {
+    title: "October 12-13, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-october"
   },
-    {
-      title: "July 13/14 8:00 AM - 10:30 AM",
-      price: "$145.00",
-      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
-      filter: "filter-intermediate"
+  {
+    title: "October 12-13, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-october"
   },
-    {
-      title: "August 3/4 8:00 AM - 10:30 AM",
-      price: "$145.00",
-      description: "Level 1 - Beginner 2 day class, all gear is provided.",
-      filter: "filter-beginner"
+
+  {
+    title: "October 19-20, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-october"
   },
-    {
-      title: "August 3/4 8:00 AM - 10:30 AM",
-      price: "$145.00",
-      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
-      filter: "filter-intermediate"
+  {
+    title: "October 19-20, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-october"
+  },
+  {
+    title: "October 19-20, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-october"
+  },
+  {
+    title: "November 1-2, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-november"
+  },
+  {
+    title: "November 1-2, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-november"
+  },
+  {
+    title: "November 1-2, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-november"
+  },
+  {
+    title: "November 9-10, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-november"
+  },
+  {
+    title: "November 9-10, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-november"
+  },
+  {
+    title: "November 9-10, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
+    price: "$166.00",
+    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
+    filter: "filter-november"
   },
     {
       title: "Private Lessons",
@@ -79,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
     item.innerHTML = `
         <div class="menu-content">
             <a href="">${cls.title}</a>
-           <span>${cls.filter === "filter-private"? "" : `<strike>$180</strike>`}
+           <span>${cls.filter === "filter-private"? "" : ``}
  ${cls.price}</span>
         </div>
         <div class="menu-ingredients">
