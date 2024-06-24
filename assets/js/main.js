@@ -13,25 +13,25 @@ document.addEventListener("DOMContentLoaded", function() {
   const classData = [
     {
       title: "July 13/14 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "$145.00",
+      price: "",
       description: "Level 1 - Beginner 2 day class, all gear is provided.",
       filter: "filter-beginner"
   },
     {
       title: "July 13/14 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "$145.00",
+      price: "",
       description: "Level 2 - Intermediate 2 day class, all gear is provided.",
       filter: "filter-intermediate"
   },
     {
       title: "August 3/4 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "$145.00",
+      price: "",
       description: "Level 1 - Beginner 2 day class, all gear is provided.",
       filter: "filter-beginner"
   },
     {
       title: "August 3/4 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "$145.00",
+      price: "",
       description: "Level 2 - Intermediate 2 day class, all gear is provided.",
       filter: "filter-intermediate"
   },
