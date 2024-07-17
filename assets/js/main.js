@@ -53,26 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
     description: " Levels 1 & 2. All gear is provided. Please call for any questions",
     filter: "filter-september"
   },
-
-  {
-    title: "October 12-13, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-october"
-  },
-  {
-    title: "October 12-13, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-october"
-  },
-  {
-    title: "October 12-13, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-october"
-  },
-
   {
     title: "October 19-20, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
     price: "$166.00",
@@ -90,24 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
     price: "$166.00",
     description: " Levels 1 & 2. All gear is provided. Please call for any questions",
     filter: "filter-october"
-  },
-  {
-    title: "November 1-2, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-november"
-  },
-  {
-    title: "November 1-2, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-november"
-  },
-  {
-    title: "November 1-2, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-november"
   },
   {
     title: "November 9-10, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
