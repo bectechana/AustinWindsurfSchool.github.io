@@ -11,30 +11,7 @@ function toggleMinorForm(isMinor) {
 
 document.addEventListener("DOMContentLoaded", function() {
   const classData = [
-    {
-      title: "July 13/14 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "",
-      description: "Level 1 - Beginner 2 day class, all gear is provided.",
-      filter: "filter-beginner"
-  },
-    {
-      title: "July 13/14 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "",
-      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
-      filter: "filter-intermediate"
-  },
-    {
-      title: "August 3/4 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "",
-      description: "Level 1 - Beginner 2 day class, all gear is provided.",
-      filter: "filter-beginner"
-  },
-    {
-      title: "August 3/4 8:00 AM - 10:30 AM (SOLD OUT)",
-      price: "",
-      description: "Level 2 - Intermediate 2 day class, all gear is provided.",
-      filter: "filter-intermediate"
-  },
+
   {
     title: "September 28-29, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
     price: "$166.00",
@@ -53,50 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
     description: " Levels 1 & 2. All gear is provided. Please call for any questions",
     filter: "filter-september"
   },
-  {
-    title: "October 19-20, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-october"
-  },
-  {
-    title: "October 19-20, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-october"
-  },
-  {
-    title: "October 19-20, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-october"
-  },
-  {
-    title: "November 9-10, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-november"
-  },
-  {
-    title: "November 9-10, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-november"
-  },
-  {
-    title: "November 9-10, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-november"
-  },
-    {
-      title: "Private Lessons",
-      price: "$100-$200",
-      description: "Please call to setup a private lesson, pricing varies.",
-      filter: "filter-private"
-  },
-
-
       // Add more classes as needed
   ];
 
