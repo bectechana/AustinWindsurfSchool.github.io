@@ -13,22 +13,70 @@ document.addEventListener("DOMContentLoaded", function() {
   const classData = [
 
   {
-    title: "September 28-29, Saturday 9:00 AM - 11:30 AM and Sunday 9:00 AM - 11:00 AM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-september"
+    title: "One Day Classes on Saturdays March 1, 8, and 15 from 10-1 PM or 1:30-4:30 PM",
+    price: "$100.00",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    filter: "filter-March"
   },
   {
-    title: "September 28-29, Saturday 10:30 AM - 1:00 PM and Sunday 11:00 AM - 1:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-september"
+    title: "One Day Class on Sunday March 23 from 10-1 PM",
+    price: "$100.00",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    filter: "filter-March"
   },
   {
-    title: "September 28-29, Saturday 12:00 PM - 2:30 PM and Sunday 1:00 PM - 3:00 PM",
-    price: "$166.00",
-    description: " Levels 1 & 2. All gear is provided. Please call for any questions",
-    filter: "filter-september"
+    title: "March 29 & 30 Group Trip to WorldWinds Windsurfing in Corpus Christi",
+    price: "~",
+    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
+    filter: "filter-March"
+  },
+  {
+    title: "One Day Classes on Saturdays April 5, and 12 from 10-1 PM or 1:30-4:30 PM",
+    price: "$100.00",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    filter: "filter-April"
+  },
+  {
+    title: "One Day Class on Sunday April 20 from 10-1 PM",
+    price: "$100.00",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    filter: "filter-April"
+  },
+  {
+    title: "April 26 & 27 Group Trip to WorldWinds Windsurfing in Corpus Christi",
+    price: "~",
+    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
+    filter: "filter-April"
+  },
+  {
+    title: "One Day Classes on Saturdays May 3, 24 from 10-1 PM or 1:30-4:30 PM",
+    price: "$100.00",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    filter: "filter-May"
+  },
+  {
+    title: "May 31 & June 1 Group Trip to WorldWinds Windsurfing in Corpus Christi",
+    price: "~",
+    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
+    filter: "filter-May"
+  },
+  {
+    title: "One Day Classes on Saturdays June 7, 14 and 21 from 10-1 PM or 1:30-4:30 PM",
+    price: "$100.00",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    filter: "filter-June"
+  },
+  {
+    title: "One Day Class on Sunday June 22 from 10-1 PM",
+    price: "$100.00",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    filter: "filter-June"
+  },
+  {
+    title: "June 28 and 29 Group Trip to WorldWinds Windsurfing in Corpus Christi",
+    price: "~",
+    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
+    filter: "filter-June"
   },
       // Add more classes as needed
   ];
