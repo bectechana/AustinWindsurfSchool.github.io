@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
   {
     title: "Windsurf Session on Saturdays March 1, 8, 15 and Sunday March 23, 1:30-4:30 PM from 1:30-4:30 PM",
     price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
+    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
     filter: "filter-march"
   },
   {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
   {
     title: "Windsurf Session on Saturdays April 5, 12 and Sunday April 20, 10-1 PM from 1:30-4:30 PM",
     price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
+    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
     filter: "filter-april"
   },
   {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
   {
     title: "Windsurf Session on Saturdays May 3, 10, 17, 24, 10-1 PM from 1:30-4:30 PM",
     price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
+    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
     filter: "filter-may"
   },
   {
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
   {
     title: "Windsurf Session on Saturdays 7, 14, 21, and Sunday 22, 10-1 PM from 1:30-4:30 PM",
     price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
+    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
     filter: "filter-june"
   },
       // Add more classes as needed
