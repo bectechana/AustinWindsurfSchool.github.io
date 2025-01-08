@@ -31,6 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
     filter: "filter-march"
   },
   {
+    title: "Windsurf Session on Saturdays March 1, 8, 15 and Sunday March 23, 1:30-4:30 PM from 1:30-4:30 PM",
+    price: "$40.00",
+    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
+    filter: "filter-march"
+  },
+  {
     title: "One Day Classes on Saturdays April 5, and 12 from 10-1 PM or 1:30-4:30 PM",
     price: "$100.00",
     description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
@@ -49,6 +55,12 @@ document.addEventListener("DOMContentLoaded", function() {
     filter: "filter-april"
   },
   {
+    title: "Windsurf Session on Saturdays April 5, 12 and Sunday April 20, 10-1 PM from 1:30-4:30 PM",
+    price: "$40.00",
+    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
+    filter: "filter-april"
+  },
+  {
     title: "One Day Classes on Saturdays May 3, 24 from 10-1 PM or 1:30-4:30 PM",
     price: "$100.00",
     description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
@@ -58,6 +70,12 @@ document.addEventListener("DOMContentLoaded", function() {
     title: "May 31 & June 1 Group Trip to WorldWinds Windsurfing in Corpus Christi",
     price: "~",
     description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
+    filter: "filter-may"
+  },
+  {
+    title: "Windsurf Session on Saturdays May 3, 10, 17, 24, 10-1 PM from 1:30-4:30 PM",
+    price: "$40.00",
+    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
     filter: "filter-may"
   },
   {
@@ -76,6 +94,12 @@ document.addEventListener("DOMContentLoaded", function() {
     title: "June 28 and 29 Group Trip to WorldWinds Windsurfing in Corpus Christi",
     price: "~",
     description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
+    filter: "filter-june"
+  },
+  {
+    title: "Windsurf Session on Saturdays 7, 14, 21, and Sunday 22, 10-1 PM from 1:30-4:30 PM",
+    price: "$40.00",
+    description: " Hit the water and windsurf! Requirement: Windsurfer has passed a class, bring a helmet.",
     filter: "filter-june"
   },
       // Add more classes as needed
