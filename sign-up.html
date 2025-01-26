@@ -80,10 +80,10 @@
 
       <form method="POST" name="sign-up-form" class="sign-up-form">
         <div class="form-group">
-          <label><strong> Purchase your class spot, required for reserving a place in class. We recommend signing up for two classes!: </strong></label>
+          <label><strong> Purchase your class spot, required for reserving a place in class: </strong></label>
           <a href="https://austin-windsurf-school.square.site/s/shop" target="_blank" class="btn btn-link">Check Class Availability and Purchase Here</a>
           <div class="col-sm-10">
-            <input class="form-check-input" type="checkbox" name="purchased" id="purchaseCheckbox" value="yes">
+            <input class="form-check-input" type="checkbox" name="purchased" id="purchaseCheckbox" value="yes" required>
             <label for="purchaseCheckbox">Purchased!!</label>
           </div>
         </div>
@@ -91,8 +91,8 @@
           <div class="col-md-6 form-group">
             <label for="firstName">First Name</label>
               <input type="text" name="first-name" class="form-control" id="firstName" placeholder="Enter First Name" required>
-            </div>
-            <div class="col-md-6 form-group">
+          </div>
+          <div class="col-md-6 form-group">
               <label for="lastName">Last Name</label>
               <input type="text" name="last-name" class="form-control" id="lastName" placeholder="Enter Last Name" required>
           </div>
@@ -109,12 +109,12 @@
           <div class="col-md-6 form-group">
             <label for="age">Age</label>
             <input type="number" name="age" class="form-control" id="age" placeholder="" required>
-            <small id="emailHelp" class="form-text text-muted">If participant is under 11 years, please call 425-802-2808 before booking to confirm availability</small>
+            <small id="minor" class="form-text text-muted">If participant is under 11 years, please call 425-802-2808 before booking to confirm availability</small>
           </div>
           <div class="col-md-6 form-group">
             <label for="weight">Weight in pounds (lbs)</label>
             <input type="number" name="weight" class="form-control" id="weight" placeholder="" required>
-            <small id="emailHelp" class="form-text text-muted">If participant is under 100 lbs, please call 425-802-2808 before booking to confirm availability</small>
+            <small id="weight" class="form-text text-muted">If participant is under 100 lbs, please call 425-802-2808 before booking to confirm availability</small>
           </div>
           <div class="form-group">
             <label for="numPeople">How many people are signing up? (Max 5)</label>
@@ -159,7 +159,7 @@
         </div>
         <div class="form-group">
           <label for="specificDate">Chosen Class Date:</label>
-          <input class="form-control" type="date" id="specificDate" name="specificDate">
+          <input class="form-control" type="date" id="specificDate" name="specificDate" required>
         </div>
         <div class="form-group">
           <label for="preferredDates">Chosen Time:</label>
@@ -173,11 +173,11 @@
           <label for="health">If you have any medical/health conditions that may affect your learning experience, please call 425-802-2808 before signing up.</label>
           <div class="col-sm-10">
             <div class="form-check ">
-              <input class="form-check-input" type="radio" id="inlineRadio1" name="health" value="no">
+              <input class="form-check-input" type="radio" id="inlineRadio1" name="health" value="no" required>
               <label class="form-check-label" for="inlineRadio1">No, none that would affect my performance in the class.</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="inlineRadio2" name="health" value="yes">
+              <input class="form-check-input" type="radio" id="inlineRadio2" name="health" value="yes" required>
               <label class="form-check-label" for="inlineRadio2">Yes, and I called the instructor to ensure I can participate.</label>
             </div>
           </div>
@@ -294,7 +294,7 @@
           <label>Are you signing up a minor (age below 16)? Give us a call first.</label><br>
           <input type="radio" id="yesMinor" name="minorRadio" value="yes" onclick="toggleMinorForm(true)">
           <label for="yesMinor">Yes</label><br>
-          <input type="radio" id="noMinor" name="minorRadio" value="no" onclick="toggleMinorForm(false)">
+          <input type="radio" id="noMinor" name="minorRadio" value="no" onclick="toggleMinorForm(false)" >
           <label for="noMinor">No</label>
         </div>
 
@@ -320,7 +320,10 @@
           </div>
 
         </div>
-
+        <div class="form-group">
+          <label>In a couple of words please discribe how you heard about us?</label>
+          <input type="text" name="find-us" class="form-control" id="find-us" placeholder="Google, Instagram, Word of mouth from Jane" required>
+        </div>
         <div class="text-center">
           <button type="submit" value="Submit" id="submit">Submit</button>
           <p style="margin-top: 10px;">*Form will take 5-45 seconds to submit, please wait before refreshing.</p>
