@@ -13,95 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const classData = [
 
   {
-    title: "One Day Classes on Saturdays March 1, 8, and 15 from 10-1 PM or 1:30-4:30 PM",
+    title: "One Day Classes on Saturdays in June, July, & August",
     price: "$100.00",
-    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
+    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call with any questions.",
     filter: "filter-march"
   },
-  {
-    title: "One Day Class on Sunday March 23 from 10-1 PM",
-    price: "$100.00",
-    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
-    filter: "filter-march"
-  },
-  {
-    title: "March 29 & 30 Group Trip to WorldWinds Windsurfing in Corpus Christi",
-    price: "~",
-    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
-    filter: "filter-march"
-  },
-  {
-    title: "Windsurf Session on Saturdays March 1, 8, 15 and Sunday March 23, 1:30-4:30 PM from 1:30-4:30 PM",
-    price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
-    filter: "filter-march"
-  },
-  {
-    title: "One Day Classes on Saturdays April 5, and 12 from 10-1 PM or 1:30-4:30 PM",
-    price: "$100.00",
-    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
-    filter: "filter-april"
-  },
-  {
-    title: "One Day Class on Sunday April 20 from 10-1 PM",
-    price: "$100.00",
-    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
-    filter: "filter-april"
-  },
-  {
-    title: "April 26 & 27 Group Trip to WorldWinds Windsurfing in Corpus Christi",
-    price: "~",
-    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
-    filter: "filter-april"
-  },
-  {
-    title: "Windsurf Session on Saturdays April 5, 12 and Sunday April 20, 10-1 PM from 1:30-4:30 PM",
-    price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
-    filter: "filter-april"
-  },
-  {
-    title: "One Day Classes on Saturdays May 3, 24 from 10-1 PM or 1:30-4:30 PM",
-    price: "$100.00",
-    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
-    filter: "filter-may"
-  },
-  {
-    title: "May 31 & June 1 Group Trip to WorldWinds Windsurfing in Corpus Christi",
-    price: "~",
-    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
-    filter: "filter-may"
-  },
-  {
-    title: "Windsurf Session on Saturdays May 3, 10, 17, 24, 10-1 PM from 1:30-4:30 PM",
-    price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
-    filter: "filter-may"
-  },
-  {
-    title: "One Day Classes on Saturdays June 7, 14 and 21 from 10-1 PM or 1:30-4:30 PM",
-    price: "$100.00",
-    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
-    filter: "filter-june"
-  },
-  {
-    title: "One Day Class on Sunday June 22 from 10-1 PM",
-    price: "$100.00",
-    description: " Levels 1 & 2. All gear is provided, bring a helmet. Please call for any questions",
-    filter: "filter-june"
-  },
-  {
-    title: "June 28 and 29 Group Trip to WorldWinds Windsurfing in Corpus Christi",
-    price: "~",
-    description: " All levels. Call WorldWinds Windsurfing in advance for lesson and gear reservations. This is a fun opportunity to hang out with your Austin friends in sunny Bird Island Basin!",
-    filter: "filter-june"
-  },
-  {
-    title: "Windsurf Session on Saturdays 7, 14, 21, and Sunday 22, 10-1 PM from 1:30-4:30 PM",
-    price: "$40.00",
-    description: " Hit the water and windsurf! Requirement: First pass the level 1 class and bring a helmet.",
-    filter: "filter-june"
-  },
+
       // Add more classes as needed
   ];
 
