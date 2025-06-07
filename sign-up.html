@@ -80,6 +80,10 @@
 
       <form method="POST" name="sign-up-form" class="sign-up-form">
         <div class="form-group">
+          <span style="color: red; font-weight: bold;">Note*:</span> To reserve a spot for gear rental, you must have taken a lesson and <strong>passed a basic sailing test</strong>. This ensures you can safely launch and return, keeping yourself and others safe. If you have windsurfed before but are unsure of your skills, please give us a call.  
+       </div>
+       
+        <div class="form-group">
           <label><strong> Purchase your class spot, required for reserving a place in class: </strong></label>
           <a href="https://austin-windsurf-school.square.site/s/shop" target="_blank" class="btn btn-link">Check Class Availability and Purchase Here</a>
           <div class="col-sm-10">
@@ -148,18 +152,36 @@
           </label>
         </div>
         <div class="form-group">
-          <label for="preferredDates">Chosen Month: </label>
+          <label for="preferredDates">Please Select Lesson Date: </label>
           <select class="form-control" id="preferredDates" name="weekend" required>
-              <option value="" disabled selected>Select a month</option>
-              <option value="March">March</option>
-              <option value="April">April</option>
-              <option value="May">May</option>
-              <option value="June">June</option>
+              <option value="" disabled selected>Click Month and Date</option>
+                <optgroup label="March">
+                    <option value="March 1st">March 1st</option>
+                    <option value="March 8th">March 8th</option>
+                    <option value="March 15th">March 15th</option>
+                    <option value="March 23rd">March 23rd</option>
+                </optgroup>
+            
+                <optgroup label="April">
+                    <option value="April 5th">April 5th</option>
+                    <option value="April 12th">April 12th</option>
+                    <option value="April 20th">April 20th</option>
+                </optgroup>
+            
+                <optgroup label="May">
+                    <option value="May 3rd">May 3rd</option>
+                    <option value="May 10th">May 10th</option>
+                    <option value="May 17th">May 17th</option>
+                    <option value="May 24th">May 24th</option>
+                </optgroup>
+            
+                <optgroup label="June">
+                    <option value="June 7th">June 7th</option>
+                    <option value="June 14th">June 14th</option>
+                    <option value="June 21st">June 21st</option>
+                    <option value="June 22nd">June 22nd</option>
+                </optgroup>            
           </select>
-        </div>
-        <div class="form-group">
-          <label for="specificDate">Chosen Class Date:</label>
-          <input class="form-control" type="date" id="specificDate" name="specificDate" required>
         </div>
         <div class="form-group">
           <label for="preferredDates">Chosen Time:</label>
@@ -322,7 +344,7 @@
         </div>
         <div class="form-group">
           <label>In a couple of words please discribe how you heard about us?</label>
-          <input type="text" name="find-us" class="form-control" id="find-us" placeholder="Google, Instagram, Word of mouth from Jane" required>
+          <input type="text" name="find-us" class="form-control" id="find-us" placeholder="Google ad, Instagram, Word of mouth from Jane" required>
         </div>
         <div class="text-center">
           <button type="submit" value="Submit" id="submit">Submit</button>
